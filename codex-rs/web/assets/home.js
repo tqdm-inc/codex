@@ -37,6 +37,57 @@ function refreshRelativeTimes() {
 refreshRelativeTimes();
 setInterval(refreshRelativeTimes, 60000);
 
+const dashboardSearch = document.querySelector("#dashboard-search");
+const dashboardLimits = { project: 12, session: 20 };
+const dashboardVisible = { ...dashboardLimits };
+
+function refreshDashboardItems() {
+  const query = dashboardSearch?.value.trim().toLowerCase() || "";
+  const shownByKind = { project: 0, session: 0 };
+  const matchedByKind = { project: 0, session: 0 };
+  for (const item of document.querySelectorAll("[data-dashboard-item]")) {
+    const kind = item.dataset.dashboardKind;
+    const matches = !query || item.dataset.searchText.includes(query);
+    if (matches) matchedByKind[kind] += 1;
+    const withinLimit =
+      query ||
+      shownByKind[kind] < dashboardVisible[kind];
+    item.hidden = !matches || !withinLimit;
+    if (matches && withinLimit) shownByKind[kind] += 1;
+  }
+  for (const group of document.querySelectorAll("[data-session-group]")) {
+    group.hidden = !group.querySelector("[data-dashboard-item]:not([hidden])");
+  }
+  for (const button of document.querySelectorAll("[data-show-more]")) {
+    const kind = button.dataset.showMore === "projects" ? "project" : "session";
+    const remaining = matchedByKind[kind] - shownByKind[kind];
+    button.hidden = Boolean(query) || remaining <= 0;
+    button.textContent = `Show ${Math.min(remaining, dashboardLimits[kind])} more ${kind}s`;
+  }
+  const totalMatches = matchedByKind.project + matchedByKind.session;
+  const results = document.querySelector("[data-dashboard-results]");
+  if (results) results.textContent = query ? `${totalMatches} matches` : "";
+  document.querySelector("[data-clear-dashboard-search]")?.classList.toggle("hidden", !query);
+  document.querySelector("[data-dashboard-empty]")?.classList.toggle("hidden", totalMatches !== 0);
+  document.querySelector("#recent-projects")?.classList.toggle("hidden", query && matchedByKind.project === 0);
+  document.querySelector("#recent-sessions")?.classList.toggle("hidden", query && matchedByKind.session === 0);
+}
+
+dashboardSearch?.addEventListener("input", refreshDashboardItems);
+document.querySelector("[data-clear-dashboard-search]")?.addEventListener("click", () => {
+  dashboardSearch.value = "";
+  refreshDashboardItems();
+  dashboardSearch.focus();
+});
+document.querySelectorAll("[data-show-more]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const kind = button.dataset.showMore === "projects" ? "project" : "session";
+    dashboardVisible[kind] += dashboardLimits[kind];
+    refreshDashboardItems();
+  });
+});
+refreshDashboardItems();
+
 function setPickerError(message = "") {
   pickerError.textContent = message;
   pickerError.classList.toggle("hidden", !message);
@@ -127,14 +178,17 @@ async function loadDirectory(path = "", cursor = null, append = false) {
 
 document.querySelectorAll("[data-open-picker]").forEach((button) => {
   button.addEventListener("click", () => {
+    picker._returnFocus = document.activeElement;
     picker.classList.remove("hidden");
     picker.classList.add("grid");
+    requestAnimationFrame(() => document.querySelector("[data-close-picker]")?.focus());
     void loadDirectory();
   });
 });
 document.querySelector("[data-close-picker]")?.addEventListener("click", () => {
   picker.classList.add("hidden");
   picker.classList.remove("grid");
+  picker._returnFocus?.focus();
 });
 parentButton?.addEventListener("click", () => {
   if (parentDirectory) void loadDirectory(parentDirectory);
@@ -144,6 +198,26 @@ document.querySelector("[data-open-directory]")?.addEventListener("click", () =>
 });
 picker?.addEventListener("click", (event) => {
   if (event.target === picker) document.querySelector("[data-close-picker]")?.click();
+});
+picker?.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    document.querySelector("[data-close-picker]")?.click();
+    return;
+  }
+  if (event.key !== "Tab") return;
+  const focusable = [...picker.querySelectorAll("button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href]")]
+    .filter((element) => !element.hidden && element.offsetParent !== null);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
 });
 
 document.querySelector("[data-device-login]")?.addEventListener("click", async (event) => {

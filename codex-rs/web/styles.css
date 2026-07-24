@@ -98,8 +98,13 @@
     margin: 0;
     width: 100%;
     max-width: 100vw;
-    overflow: hidden;
+    overflow-x: clip;
     @apply bg-background font-sans text-foreground;
+  }
+
+  body[data-dashboard] {
+    height: auto;
+    min-height: 100%;
   }
 
   button,

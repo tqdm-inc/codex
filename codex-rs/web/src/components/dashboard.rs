@@ -44,7 +44,7 @@ pub(crate) async fn dashboard_document(cx: &Cx, data: DashboardDocumentData<'_>)
                 <script defer="" src="/assets/home.js"></script>
             </head>
             <body data-dashboard="" data-base-path=(data.base_path)>
-                <header class="border-b border-border bg-background/95">
+                <header class="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
                     <div class="mx-auto flex h-16 max-w-6xl items-center gap-3 px-6 max-sm:px-4">
                         <span class="grid size-8 place-items-center rounded-lg bg-primary font-mono text-xs font-bold text-primary-foreground">">_"</span>
                         <strong class="text-sm">"Codex Web"</strong>
@@ -68,6 +68,22 @@ pub(crate) async fn dashboard_document(cx: &Cx, data: DashboardDocumentData<'_>)
                         <button type="button" data-open-picker="" class="shrink-0 rounded-lg bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-xs hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring max-sm:w-full">"Open a folder"</button>
                     </section>
 
+                    <section class="sticky top-16 z-30 -mx-2 mt-8 rounded-xl border border-border bg-background/95 p-2 shadow-xs backdrop-blur">
+                        <div class="flex items-center gap-2">
+                            <span class="pl-2 text-sm text-muted-foreground" aria-hidden="true">"⌕"</span>
+                            <input
+                                id="dashboard-search"
+                                type="search"
+                                autocomplete="off"
+                                class="h-10 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none placeholder:text-muted-foreground"
+                                placeholder="Search projects, sessions, or paths"
+                                aria-label="Search projects and sessions"
+                            >
+                            <span data-dashboard-results="" aria-live="polite" class="shrink-0 font-mono text-[0.65rem] text-muted-foreground"></span>
+                            <button type="button" data-clear-dashboard-search="" class="hidden shrink-0 rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-foreground/5 hover:text-foreground">"Clear"</button>
+                        </div>
+                    </section>
+
                     if data.account.is_none() {
                         <section class="mt-10 grid gap-6 rounded-2xl border border-border bg-foreground/[0.02] p-6 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.72fr)]">
                             <div>
@@ -87,7 +103,7 @@ pub(crate) async fn dashboard_document(cx: &Cx, data: DashboardDocumentData<'_>)
                         </section>
                     }
 
-                    <section class="mt-12">
+                    <section id="recent-projects" class="mt-12">
                         <div class="flex items-baseline gap-3">
                             <h2 class="text-sm font-semibold">"Recent projects"</h2>
                             <span class="font-mono text-[0.68rem] text-muted-foreground">(data.projects.len())" paths"</span>
@@ -101,22 +117,23 @@ pub(crate) async fn dashboard_document(cx: &Cx, data: DashboardDocumentData<'_>)
                                 <span class="font-mono text-lg text-muted-foreground">"→"</span>
                             </button>
                         } else {
-                            <div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                                for project in data.projects.iter().take(24) {
+                            <div data-project-list="" class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                                for project in data.projects {
                                     project_card(project: project, truncated: data.truncated, base_path: data.base_path)
                                 }
                             </div>
+                            <button type="button" data-show-more="projects" hidden=(data.projects.len() <= 12) class="mx-auto mt-5 block rounded-lg border border-border px-4 py-2 text-sm text-muted-foreground hover:bg-foreground/5 hover:text-foreground">"Show more projects"</button>
                         }
                     </section>
 
-                    <section class="mt-12">
+                    <section id="recent-sessions" class="mt-12">
                         <div class="flex items-baseline gap-3 border-b border-border pb-3">
                             <h2 class="text-sm font-semibold">"Recent sessions"</h2>
                             <span class="font-mono text-[0.68rem] text-muted-foreground">(data.threads.len())(if data.truncated { "+" } else { "" })" loaded"</span>
                         </div>
-                        <div>
+                        <div data-session-list="">
                             for group in session_groups(data.threads) {
-                                <section class="pt-6">
+                                <section data-session-group="" class="pt-6">
                                     <h3 class="pb-2 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">(group.label)</h3>
                                     <div class="divide-y divide-border border-t border-border">
                                         for thread in group.threads {
@@ -126,7 +143,9 @@ pub(crate) async fn dashboard_document(cx: &Cx, data: DashboardDocumentData<'_>)
                                 </section>
                             }
                         </div>
+                        <button type="button" data-show-more="sessions" hidden=(data.threads.len() <= 20) class="mx-auto mt-5 block rounded-lg border border-border px-4 py-2 text-sm text-muted-foreground hover:bg-foreground/5 hover:text-foreground">"Show more sessions"</button>
                     </section>
+                    <p data-dashboard-empty="" class="mt-12 hidden rounded-xl border border-dashed border-border px-6 py-10 text-center text-sm text-muted-foreground">"No projects or sessions match this search."</p>
                 </main>
                 directory_picker()
                 settings_modal(mcp_servers: data.mcp_servers, accounts: data.accounts, active_account: data.active_account)
@@ -141,7 +160,12 @@ async fn project_card(project: &Project, truncated: bool, base_path: &str) -> Re
     let preview = thread_title(&project.latest_thread);
     let timestamp = recency(&project.latest_thread);
     view! {
-        <article class="group relative overflow-hidden rounded-xl border border-border bg-background p-5 shadow-xs transition-colors hover:border-foreground/25">
+        <article
+            data-dashboard-item=""
+            data-dashboard-kind="project"
+            data-search-text=(format!("{} {} {}", project.name, project.cwd, preview).to_lowercase())
+            class="group relative overflow-hidden rounded-xl border border-border bg-background p-5 shadow-xs transition-colors hover:border-foreground/25"
+        >
             <div class="flex items-start gap-3">
                 <span class="mt-0.5 grid size-8 shrink-0 place-items-center rounded-lg border border-border bg-foreground/[0.025] font-mono text-xs text-sky-600 dark:text-sky-400">"⌁"</span>
                 <div class="min-w-0 flex-1">
@@ -166,7 +190,13 @@ async fn session_row(thread: &Value, base_path: &str) -> Result {
     let cwd = string(thread, "cwd");
     let timestamp = recency(thread);
     view! {
-        <a href=(format!("{base_path}/thread/{id}")) class="group grid grid-cols-[minmax(0,1fr)_auto] gap-x-5 gap-y-1 py-4 hover:bg-foreground/[0.018] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring max-sm:gap-x-3">
+        <a
+            href=(format!("{base_path}/thread/{id}"))
+            data-dashboard-item=""
+            data-dashboard-kind="session"
+            data-search-text=(format!("{} {cwd}", thread_title(thread)).to_lowercase())
+            class="group grid grid-cols-[minmax(0,1fr)_auto] gap-x-5 gap-y-1 py-4 hover:bg-foreground/[0.018] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring max-sm:gap-x-3"
+        >
             <span class="truncate text-sm font-medium">(thread_title(thread))</span>
             <span class="font-mono text-[0.66rem] text-muted-foreground" data-relative-time=(timestamp)></span>
             <span class="truncate font-mono text-[0.68rem] text-muted-foreground">(cwd)</span>

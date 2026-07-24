@@ -3,6 +3,7 @@ let mcpConfig = {};
 let mcpEffective = {};
 let mcpOrigins = {};
 let mcpExpectedVersion = null;
+const modalReturnFocus = new WeakMap();
 
 async function settingsRpc(method, params) {
   const response = await fetch(settingsBase + "/api/rpc", {
@@ -36,14 +37,24 @@ function setCodexTheme(theme) {
 function openCodexModal(id) {
   const modal = document.getElementById(id);
   if (!modal) return;
+  modalReturnFocus.set(modal, document.activeElement);
   modal.classList.remove("hidden");
   modal.classList.add("grid");
+  requestAnimationFrame(() => {
+    const target = modal.querySelector(
+      "[autofocus], button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href]",
+    );
+    target?.focus();
+  });
 }
 
 function closeCodexModal(id) {
   const modal = document.getElementById(id);
-  modal?.classList.add("hidden");
-  modal?.classList.remove("grid");
+  if (!modal) return;
+  modal.classList.add("hidden");
+  modal.classList.remove("grid");
+  modalReturnFocus.get(modal)?.focus();
+  modalReturnFocus.delete(modal);
 }
 
 function message(selector, text, error = false) {
@@ -469,4 +480,27 @@ document.querySelector("[data-mcp-logout]")?.addEventListener("click", async () 
   try { const result = await settingsRpc("mcpServer/oauth/logout", { name, threadId: document.body.dataset.threadId || null }); mcpMessage(result.removed ? `${name} OAuth credentials cleared.` : `${name} had no stored OAuth credentials.`); } catch (error) { mcpMessage(error.message, true); }
 });
 
-document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !settingsModal?.classList.contains("hidden")) closeCodexModal("settings-modal"); });
+document.addEventListener("keydown", (event) => {
+  const modal = [...document.querySelectorAll("#settings-modal, #goal-modal")]
+    .find((candidate) => !candidate.classList.contains("hidden"));
+  if (!modal) return;
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeCodexModal(modal.id);
+    return;
+  }
+  if (event.key !== "Tab") return;
+  const focusable = [...modal.querySelectorAll(
+    "button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href]",
+  )].filter((element) => !element.hidden && element.offsetParent !== null);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+});
