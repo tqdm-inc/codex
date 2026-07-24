@@ -1,0 +1,79 @@
+[package]
+name = "typeduck-codex-web"
+version = "0.2.0"
+edition.workspace = true
+license.workspace = true
+description = "A standalone browser interface and Codex runtime"
+repository = "https://github.com/tqdm-inc/codex"
+readme = "README.md"
+keywords = ["codex", "cli", "web", "ai"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "typeduck-codex-web"
+path = "src/main.rs"
+
+[lib]
+name = "codex_web"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+async-stream = { workspace = true }
+base64 = { workspace = true }
+bytes = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+codex-app-server = { workspace = true }
+codex-arg0 = { workspace = true }
+codex-config = { workspace = true }
+codex-http-client = { workspace = true }
+codex-login = { workspace = true }
+codex-utils-cli = { workspace = true }
+codex-utils-home-dir = { workspace = true }
+codex-utils-path = { workspace = true }
+constant_time_eq = { workspace = true }
+dirs = { workspace = true }
+hmac = { workspace = true }
+http = { workspace = true }
+http-body = { workspace = true }
+http-body-util = { workspace = true }
+inventory = { workspace = true }
+pulldown-cmark = { workspace = true, features = ["html"] }
+rand = { workspace = true }
+reqwest = { workspace = true, features = ["socks"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = [
+    "io-util",
+    "macros",
+    "net",
+    "process",
+    "rt-multi-thread",
+    "signal",
+    "sync",
+    "time",
+] }
+tokio-stream = { workspace = true, features = ["sync"] }
+tokio-util = { workspace = true }
+topcoat = { workspace = true }
+topcoat-core = { workspace = true }
+topcoat-router = { workspace = true }
+topcoat-router-macro = { workspace = true }
+topcoat-view = { workspace = true }
+topcoat-view-macro = { workspace = true }
+tracing = { workspace = true }
+toml = { workspace = true }
+url = { workspace = true }
+urlencoding = { workspace = true }
+webbrowser = { workspace = true }
+
+[dev-dependencies]
+insta = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }

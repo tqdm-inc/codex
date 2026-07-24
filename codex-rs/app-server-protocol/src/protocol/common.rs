@@ -996,6 +996,12 @@ client_request_definitions! {
         response: v2::McpServerOauthLoginResponse,
     },
 
+    McpServerOauthLogout => "mcpServer/oauth/logout" {
+        params: v2::McpServerOauthLogoutParams,
+        serialization: mcp_oauth_server(params.name),
+        response: v2::McpServerOauthLogoutResponse,
+    },
+
     McpServerRefresh => "config/mcpServer/reload" {
         params: #[ts(type = "undefined")] #[serde(skip_serializing_if = "Option::is_none")] Option<()>,
         serialization: global("mcp-registry"),
@@ -2073,6 +2079,20 @@ mod tests {
         };
         assert_eq!(
             mcp_oauth.serialization_scope(),
+            Some(ClientRequestSerializationScope::McpOauth {
+                server_name: "server-a".to_string()
+            })
+        );
+
+        let mcp_oauth_logout = ClientRequest::McpServerOauthLogout {
+            request_id: request_id(),
+            params: v2::McpServerOauthLogoutParams {
+                name: "server-a".to_string(),
+                thread_id: None,
+            },
+        };
+        assert_eq!(
+            mcp_oauth_logout.serialization_scope(),
             Some(ClientRequestSerializationScope::McpOauth {
                 server_name: "server-a".to_string()
             })

@@ -146,6 +146,9 @@ enum Subcommand {
     /// [experimental] Run the app server or related tooling.
     AppServer(AppServerCommand),
 
+    /// Start a browser-native Codex session.
+    Web(WebCommand),
+
     /// [experimental] Manage the app-server daemon with remote control enabled.
     RemoteControl(RemoteControlCommand),
 
@@ -215,6 +218,29 @@ struct CompletionCommand {
     /// Shell to generate completions for
     #[clap(value_enum, default_value_t = Shell::Bash)]
     shell: Shell,
+}
+
+#[derive(Debug, Parser)]
+struct WebCommand {
+    /// TCP port to listen on. Uses an available port when omitted.
+    #[arg(long, default_value_t = 0)]
+    port: u16,
+
+    /// Do not open the session in the default browser.
+    #[arg(long)]
+    no_open: bool,
+
+    /// Tell the agent to use the specified directory as its working root.
+    #[arg(long = "cd", short = 'C', value_name = "DIR")]
+    cwd: Option<PathBuf>,
+
+    /// Error out when config.toml contains unknown fields.
+    #[arg(long, default_value_t = false)]
+    strict_config: bool,
+
+    /// Replace the persistent browser bootstrap token.
+    #[arg(long, default_value_t = false)]
+    reset_token: bool,
 }
 
 #[derive(Debug, Parser)]
@@ -1230,6 +1256,26 @@ async fn cli_main(
                 }
             }
         }
+        Some(Subcommand::Web(web_cli)) => {
+            reject_remote_mode_for_subcommand(
+                root_remote.as_deref(),
+                root_remote_auth_token_env.as_deref(),
+                "web",
+            )?;
+            codex_web::run(codex_web::WebOptions {
+                port: web_cli.port,
+                open_browser: !web_cli.no_open,
+                cwd: web_cli.cwd,
+                app_server_command: codex_web::AppServerCommand::CodexCli {
+                    executable: std::env::current_exe()?,
+                },
+                config_overrides: root_config_overrides.raw_overrides,
+                strict_config: web_cli.strict_config || root_strict_config,
+                reset_token: web_cli.reset_token,
+                daemon_config: None,
+            })
+            .await?;
+        }
         Some(Subcommand::RemoteControl(remote_control_cli)) => {
             let subcommand_name = remote_control_cli.subcommand_name();
             reject_remote_mode_for_subcommand(
@@ -2164,6 +2210,7 @@ fn unsupported_subcommand_name_for_strict_config(
         None
         | Some(Subcommand::Exec(_))
         | Some(Subcommand::Review(_))
+        | Some(Subcommand::Web(_))
         | Some(Subcommand::McpServer(_))
         | Some(Subcommand::ExecServer(_))
         | Some(Subcommand::Resume(_))
@@ -3631,6 +3678,29 @@ mod tests {
                 ..
             }))
         );
+    }
+
+    #[test]
+    fn web_command_parses_browser_and_network_options() {
+        let cli = MultitoolCli::try_parse_from([
+            "codex",
+            "web",
+            "--port",
+            "34261",
+            "--no-open",
+            "-C",
+            "/workspace",
+            "--strict-config",
+        ])
+        .expect("parse");
+        let Some(Subcommand::Web(command)) = cli.subcommand else {
+            panic!("expected web subcommand");
+        };
+
+        assert_eq!(command.port, 34261);
+        assert!(command.no_open);
+        assert_eq!(command.cwd, Some(PathBuf::from("/workspace")));
+        assert!(command.strict_config);
     }
 
     #[test]

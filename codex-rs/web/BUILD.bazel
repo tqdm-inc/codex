@@ -1,0 +1,13 @@
+load("//:defs.bzl", "codex_rust_crate")
+
+codex_rust_crate(
+    name = "web",
+    compile_data = [
+        "assets/app.css",
+        "assets/app.js",
+        "assets/bootstrap.js",
+        "assets/home.js",
+        "assets/settings.js",
+    ],
+    crate_name = "codex_web",
+)

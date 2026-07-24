@@ -1,0 +1,35 @@
+---
+source: web/src/components/views_tests.rs
+expression: "format!(\"ids:\\n{ids}\\n\\ntext:\\n{text}\")"
+---
+ids:
+composer-dock
+queue-panel
+queue-count
+queue-state
+clear-queue-button
+run-queue-button
+queue-list
+attachments
+composer
+command-palette
+run-status
+codex-pet
+run-status-label
+run-elapsed
+prompt
+attach-button
+image-input
+permissions-select
+composer-plan-control
+composer-plan-toggle
+composer-hint
+stop-button
+stop-spinner
+stop-icon
+send-button
+send-spinner
+send-icon
+
+text:
+QueuedClearRun next◖•ᴥ•◗Starting Codex…+select]:[appearance:base-select] w-28"WorkspaceYOLORead Only⌄PlanShift + Enter for a new line■↑

@@ -1,0 +1,6 @@
+---
+source: web/src/components/views_tests.rs
+expression: "format!(\"main: {}\\ntranscript: {}\", class_for_id(&rendered, \"chat-main\"),\nclass_for_id(&rendered, \"transcript\"))"
+---
+main: relative grid h-dvh min-h-0 min-w-0 grid-rows-[auto_minmax(0,1fr)] overflow-hidden bg-background
+transcript: min-h-0 overflow-y-auto overscroll-contain px-[max(1.25rem,calc((100%-48rem)/2))] pt-8 pb-40

@@ -1,0 +1,6 @@
+---
+source: web/src/components/views_tests.rs
+expression: "format!(\"sidebar: {SIDEBAR_LAYOUT}\\nthread list: {THREAD_LIST_LAYOUT}\")"
+---
+sidebar: flex h-dvh max-h-dvh min-h-0 min-w-0 flex-col overflow-hidden border-r border-border bg-foreground/[0.035] p-3 max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:z-50 max-md:w-[min(20rem,86vw)] max-md:-translate-x-full max-md:bg-background max-md:shadow-sm max-md:transition-transform
+thread list: min-h-0 flex-1 overflow-y-auto overscroll-contain

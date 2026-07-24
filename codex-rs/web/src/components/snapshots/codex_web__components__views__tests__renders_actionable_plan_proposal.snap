@@ -1,0 +1,19 @@
+---
+source: web/src/components/views_tests.rs
+expression: view.render(&cx)
+---
+<article id="item-plan-1" class="plan-proposal mb-7 overflow-hidden rounded-xl border border-border bg-foreground/[0.018] shadow-xs" data-item-id="plan-1" data-plan-proposal="" data-plan-complete="true" data-plan-actionable="true" data-plan-markdown="# Ship the feature
+
+## Summary
+
+Render **Markdown**.
+
+- Implement it
+- Verify it"><header class="flex items-center gap-3 border-b border-border bg-foreground/[0.025] px-4 py-3"><span class="grid size-7 shrink-0 place-items-center rounded-lg border border-border bg-background font-mono text-xs font-semibold">✓</span><div class="min-w-0"><h2 class="text-sm font-semibold">Proposed plan</h2><p class="text-xs text-muted-foreground">Ready for your decision</p></div></header><div class="prose max-w-none px-5 py-5 text-sm leading-7"><h1>Ship the feature</h1>
+<h2>Summary</h2>
+<p>Render <strong>Markdown</strong>.</p>
+<ul>
+<li>Implement it</li>
+<li>Verify it</li>
+</ul>
+</div><footer class="border-t border-border bg-background px-4 py-4" data-plan-actions=""><div class="flex items-start gap-3 max-sm:flex-col"><div class="min-w-0 flex-1"><p class="text-sm font-semibold">Implement this plan?</p><p class="mt-1 text-xs text-muted-foreground" data-plan-status="">Choose how Codex should continue.</p></div><div class="flex shrink-0 flex-wrap justify-end gap-2 max-sm:w-full max-sm:justify-start" data-plan-buttons=""><button type="button" class="rounded-lg bg-primary px-3 py-2 text-xs font-medium text-primary-foreground shadow-xs hover:bg-primary/90 disabled:pointer-events-none disabled:opacity-50" data-plan-action="implement">Implement plan</button><button type="button" class="rounded-lg border border-border bg-background px-3 py-2 text-xs font-medium shadow-xs hover:bg-foreground/5 disabled:pointer-events-none disabled:opacity-50" data-plan-action="fresh">Clear context and implement</button><button type="button" class="rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-foreground/5 hover:text-foreground disabled:pointer-events-none disabled:opacity-50" data-plan-action="stay">Stay in Plan mode</button></div></div></footer></article>

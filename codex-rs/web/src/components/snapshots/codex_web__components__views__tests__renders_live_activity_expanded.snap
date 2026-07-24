@@ -1,0 +1,5 @@
+---
+source: web/src/components/views_tests.rs
+expression: view.render(&cx)
+---
+<div id="item-command-1" class="activity-row min-w-0" data-item-id="command-1" data-activity-status="inProgress" data-activity-title="$ cargo check -p codex-web" data-activity-kind="commandExecution"><details open="true" class="group/sub"><summary class="flex min-h-9 cursor-pointer list-none items-center gap-2 px-3 py-1.5 text-xs"><span class="activity-caret shrink-0 text-muted-foreground group-open/sub:rotate-90">›</span><span class="size-1.5 shrink-0 rounded-full bg-sky-500"></span><span class="min-w-0 flex-1 truncate font-mono text-muted-foreground">$ cargo check -p codex-web</span><span class="shrink-0 text-sky-600 dark:text-sky-400">running</span></summary><pre class="max-h-80 overflow-auto border-t border-border bg-background/35 px-4 py-3 font-mono text-xs whitespace-pre-wrap">Checking codex-web</pre></details></div>

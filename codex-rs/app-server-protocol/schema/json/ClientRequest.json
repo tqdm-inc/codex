@@ -1940,6 +1940,23 @@
       ],
       "type": "object"
     },
+    "McpServerOauthLogoutParams": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "threadId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
     "McpServerStatusDetail": {
       "enum": [
         "full",
@@ -6665,6 +6682,30 @@
         "params"
       ],
       "title": "McpServer/oauth/loginRequest",
+      "type": "object"
+    },
+    {
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/RequestId"
+        },
+        "method": {
+          "enum": [
+            "mcpServer/oauth/logout"
+          ],
+          "title": "McpServer/oauth/logoutRequestMethod",
+          "type": "string"
+        },
+        "params": {
+          "$ref": "#/definitions/McpServerOauthLogoutParams"
+        }
+      },
+      "required": [
+        "id",
+        "method",
+        "params"
+      ],
+      "title": "McpServer/oauth/logoutRequest",
       "type": "object"
     },
     {

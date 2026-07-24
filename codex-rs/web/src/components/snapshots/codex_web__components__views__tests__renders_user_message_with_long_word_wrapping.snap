@@ -1,0 +1,5 @@
+---
+source: web/src/components/views_tests.rs
+expression: view.render(&cx)
+---
+<article id="item-user-1" class="mb-7 flex justify-end" data-item-id="user-1" data-client-id=""><div class="message-content min-w-0 max-w-[82%] rounded-xl bg-foreground/[0.06] px-4 py-2.5 text-sm whitespace-pre-wrap">averylongunbrokenvalue</div></article>

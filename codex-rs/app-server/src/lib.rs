@@ -414,6 +414,25 @@ pub async fn run_main(
     strict_config: bool,
     default_analytics_enabled: bool,
 ) -> IoResult<()> {
+    run_main_with_runtime_options(
+        arg0_paths,
+        cli_config_overrides,
+        loader_overrides,
+        strict_config,
+        default_analytics_enabled,
+        AppServerRuntimeOptions::default(),
+    )
+    .await
+}
+
+pub async fn run_main_with_runtime_options(
+    arg0_paths: Arg0DispatchPaths,
+    cli_config_overrides: CliConfigOverrides,
+    loader_overrides: LoaderOverrides,
+    strict_config: bool,
+    default_analytics_enabled: bool,
+    runtime_options: AppServerRuntimeOptions,
+) -> IoResult<()> {
     run_main_with_transport_options(
         arg0_paths,
         cli_config_overrides,
@@ -423,7 +442,7 @@ pub async fn run_main(
         AppServerTransport::Stdio,
         SessionSource::VSCode,
         AppServerWebsocketAuthSettings::default(),
-        AppServerRuntimeOptions::default(),
+        runtime_options,
     )
     .await
 }
@@ -440,6 +459,7 @@ pub struct AppServerRuntimeOptions {
     pub plugin_startup_tasks: PluginStartupTasks,
     pub remote_control_startup_mode: RemoteControlStartupMode,
     pub install_shutdown_signal_handler: bool,
+    pub enable_codex_api_key_env: bool,
 }
 
 impl Default for AppServerRuntimeOptions {
@@ -449,6 +469,7 @@ impl Default for AppServerRuntimeOptions {
             plugin_startup_tasks: PluginStartupTasks::Start,
             remote_control_startup_mode: RemoteControlStartupMode::ResolvePersisted,
             install_shutdown_signal_handler: true,
+            enable_codex_api_key_env: false,
         }
     }
 }
@@ -507,7 +528,8 @@ pub async fn run_main_with_transport_options(
             config_manager
                 .replace_thread_config_loader(Arc::clone(&discovered_thread_config_loader));
             let auth_manager =
-                AuthManager::shared_from_config(&config, /*enable_codex_api_key_env*/ false).await;
+                AuthManager::shared_from_config(&config, runtime_options.enable_codex_api_key_env)
+                    .await;
             config_manager.replace_cloud_config_bundle_loader(
                 auth_manager,
                 config.chatgpt_base_url.clone(),
@@ -749,7 +771,7 @@ pub async fn run_main_with_transport_options(
     drop(unix_socket_startup_lock);
 
     let auth_manager =
-        AuthManager::shared_from_config(&config, /*enable_codex_api_key_env*/ false).await;
+        AuthManager::shared_from_config(&config, runtime_options.enable_codex_api_key_env).await;
 
     let remote_control_enabled = remote_control_policy == RemoteControlPolicy::Allowed
         && remote_control_explicitly_requested

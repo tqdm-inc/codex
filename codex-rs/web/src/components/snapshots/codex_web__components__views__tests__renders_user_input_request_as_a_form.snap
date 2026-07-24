@@ -1,0 +1,7 @@
+---
+source: web/src/components/views_tests.rs
+expression: element_summary(&view.render(&cx))
+---
+ids: approval-request-1
+questions: choice
+text: Codex has a questionChoose a modeDefaultPlanAllowDeny

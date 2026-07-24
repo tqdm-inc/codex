@@ -1,0 +1,21 @@
+---
+source: web/src/components/views_tests.rs
+expression: view.render(&cx)
+---
+<article id="item-agent-1" class="prose mb-7 max-w-none text-sm leading-7" data-item-id="agent-1"><h1>Result</h1>
+<p>Done with <strong>Topcoat</strong> and <code>Rust</code>.</p>
+<ul>
+<li>first</li>
+<li><input disabled="" type="checkbox" checked=""/>
+shipped</li>
+</ul>
+<blockquote>
+<p>Keep it maintainable.</p>
+</blockquote>
+<table><thead><tr><th>Part</th><th>State</th></tr></thead><tbody>
+<tr><td>Web</td><td>Ready</td></tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener noreferrer" href="https://example.com">Open Codex</a> and <del>remove the fallback</del>.</p>
+<pre><code class="language-rust">fn main() {}
+</code></pre>
+</article>

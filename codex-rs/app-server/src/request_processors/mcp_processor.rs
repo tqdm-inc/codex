@@ -35,6 +35,15 @@ impl McpRequestProcessor {
             .map(|response| Some(response.into()))
     }
 
+    pub(crate) async fn mcp_server_oauth_logout(
+        &self,
+        params: McpServerOauthLogoutParams,
+    ) -> Result<Option<ClientResponsePayload>, JSONRPCErrorError> {
+        self.mcp_server_oauth_logout_response(params)
+            .await
+            .map(|response| Some(response.into()))
+    }
+
     pub(crate) async fn mcp_server_refresh(
         &self,
         params: Option<()>,
@@ -220,6 +229,52 @@ impl McpRequestProcessor {
         });
 
         Ok(McpServerOauthLoginResponse { authorization_url })
+    }
+
+    async fn mcp_server_oauth_logout_response(
+        &self,
+        params: McpServerOauthLogoutParams,
+    ) -> Result<McpServerOauthLogoutResponse, JSONRPCErrorError> {
+        let McpServerOauthLogoutParams { name, thread_id } = params;
+        let auth = self.auth_manager.auth().await;
+        let mcp_config = match thread_id.as_deref() {
+            Some(thread_id) => {
+                let (_, thread) = self.load_thread(thread_id).await?;
+                let (config, _) = thread.current_mcp_config_and_runtime_context().await;
+                (*config).clone()
+            }
+            None => {
+                let config = self.load_latest_config(/*fallback_cwd*/ None).await?;
+                self.thread_manager
+                    .mcp_manager()
+                    .runtime_config(&config)
+                    .await
+            }
+        };
+        let effective_servers = codex_mcp::effective_mcp_servers(&mcp_config, auth.as_ref());
+        let Some(server) = effective_servers.get(&name) else {
+            return Err(invalid_request(format!(
+                "No MCP server named '{name}' found."
+            )));
+        };
+        let server = server.config();
+        let McpServerTransportConfig::StreamableHttp { url, .. } = &server.transport else {
+            return Err(invalid_request(
+                "OAuth logout is only supported for streamable HTTP servers.",
+            ));
+        };
+        let removed = delete_oauth_tokens(
+            &name,
+            url,
+            mcp_config.mcp_oauth_credentials_store_mode,
+            mcp_config.auth_keyring_backend_kind,
+        )
+        .map_err(|err| {
+            internal_error(format!(
+                "failed to delete OAuth credentials for MCP server '{name}': {err}"
+            ))
+        })?;
+        Ok(McpServerOauthLogoutResponse { removed })
     }
 
     async fn list_mcp_server_status(

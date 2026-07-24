@@ -1,0 +1,9 @@
+---
+source: web/src/components/views_tests.rs
+expression: view.render(&cx)
+---
+<article id="item-plan-streaming" class="plan-proposal mb-7 overflow-hidden rounded-xl border border-border bg-foreground/[0.018] shadow-xs" data-item-id="plan-streaming" data-plan-proposal="" data-plan-complete="false" data-plan-actionable="false" data-plan-markdown="# Draft plan
+
+Still writing…"><header class="flex items-center gap-3 border-b border-border bg-foreground/[0.025] px-4 py-3"><span class="grid size-7 shrink-0 place-items-center rounded-lg border border-border bg-background font-mono text-xs font-semibold">…</span><div class="min-w-0"><h2 class="text-sm font-semibold">Proposed plan</h2><p class="text-xs text-muted-foreground">Codex is preparing the proposal</p></div><span class="live-rail ml-auto h-4 w-0.5 rounded-full bg-sky-500"></span></header><div class="prose max-w-none px-5 py-5 text-sm leading-7"><h1>Draft plan</h1>
+<p>Still writing…</p>
+</div></article>

@@ -1,0 +1,1882 @@
+{
+  "baselinePackages": {
+    "__registry_reservation__typeduck-codex-execpolicy": {
+      "checksum": "37a140d6f438e793794d9345d54e4982efa6f89af0de583d0572224a77b42edb",
+      "digest": "legacy-release-reservation:typeduck-codex-execpolicy",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "published-tombstone",
+      "version": "0.1.0"
+    },
+    "__registry_reservation__typeduck-codex-extension-items": {
+      "checksum": "bc7625aa647342d7b6503c6eb40071e5f502ab41400f0be48dd4d406136536e3",
+      "digest": "legacy-release-reservation:typeduck-codex-extension-items",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "published-tombstone",
+      "version": "0.1.0"
+    },
+    "__registry_reservation__typeduck-codex-utils-absolute-path": {
+      "checksum": "cb79023ac18d47b02836285a43451b2b49847d22e3dd8f36e8c51076560a5a6e",
+      "digest": "legacy-release-reservation:typeduck-codex-utils-absolute-path",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "published-tombstone",
+      "version": "0.1.0"
+    },
+    "__registry_reservation__typeduck-codex-utils-home-dir": {
+      "checksum": "29397cc9bbb2c3438f081422f0fc0473d50bead9a4292c88528d2414702ce0f0",
+      "digest": "legacy-release-reservation:typeduck-codex-utils-home-dir",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "published-tombstone",
+      "version": "0.1.0"
+    },
+    "__registry_reservation__typeduck-codex-utils-rustls-provider": {
+      "checksum": "a70716b9a6d0fcf15fbb100c9e01d96c297d9f6f8176834c4250a659b122d2e4",
+      "digest": "legacy-release-reservation:typeduck-codex-utils-rustls-provider",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "published-tombstone",
+      "version": "0.1.0"
+    },
+    "typeduck-codex-agent-extension": {
+      "checksum": "4497ad28e426ac44e7273c62ed39bc8154f7a90875f5fb8a50eeb7686ad1ec9c",
+      "digest": "9f1d1e98d54c6bc78e268b6180d0297bc5f39b112ca410051e69014942bb0268",
+      "previouslyPublished": true,
+      "publishedChecksum": "4497ad28e426ac44e7273c62ed39bc8154f7a90875f5fb8a50eeb7686ad1ec9c",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-agent-graph-store": {
+      "checksum": "66b43b34003c1f6a85f63f339bf1a4bba8a55793493ff2743fbe25f60b8754e5",
+      "digest": "acb8fddc095b2d6325c59e7594ac517bb8610554e742044fd72cfd84a28ccb7c",
+      "previouslyPublished": true,
+      "publishedChecksum": "66b43b34003c1f6a85f63f339bf1a4bba8a55793493ff2743fbe25f60b8754e5",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-agent-identity": {
+      "checksum": "8bbc9b9a0fd10d9d6b2dfdf1a4104c5b883542763b4fa8cc9354a8c937d68f28",
+      "digest": "0c8be85223ba71fed79c1579b46eadfe9aac4b9cf6adf7d2d7e0eed3ce537187",
+      "previouslyPublished": true,
+      "publishedChecksum": "8bbc9b9a0fd10d9d6b2dfdf1a4104c5b883542763b4fa8cc9354a8c937d68f28",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-analytics": {
+      "checksum": "e95720bd1ce816974ebeea3d1ab989d90e60e3b869d8af19abdeece7b8fb9030",
+      "digest": "ac599e4b0293ba8130781a0bea94618407bc899b878a696fe74ad8f4e294658d",
+      "previouslyPublished": true,
+      "publishedChecksum": "e95720bd1ce816974ebeea3d1ab989d90e60e3b869d8af19abdeece7b8fb9030",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-api": {
+      "checksum": "ac0972ba28820b44f9904db683dc46cde4acaa036fcaf24a85e3c79312097b1d",
+      "digest": "8209e20503b484e183400a60a84fc1bcc34119b0ebdf4073588b42752461fdd4",
+      "previouslyPublished": true,
+      "publishedChecksum": "ac0972ba28820b44f9904db683dc46cde4acaa036fcaf24a85e3c79312097b1d",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-app-server": {
+      "checksum": "4b83805eb0dbd7249b733922fc931f99ca1feca5893a73e013fc43979fc69d7e",
+      "digest": "a260e7a5a387dbd3078c17d6f7c803ad3ceabfbaaf41e9d78c2866c90b1fb5bc",
+      "previouslyPublished": true,
+      "publishedChecksum": "4b83805eb0dbd7249b733922fc931f99ca1feca5893a73e013fc43979fc69d7e",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-app-server-protocol": {
+      "checksum": "acf369e174184d6f3f96e6905c50453093098367657bf43d03fc294ff64b5755",
+      "digest": "df09b032e1dbfe73880ab542dac27772c0e1453eae874b0eb1da1edeb8c53ed2",
+      "previouslyPublished": true,
+      "publishedChecksum": "acf369e174184d6f3f96e6905c50453093098367657bf43d03fc294ff64b5755",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-app-server-transport": {
+      "checksum": "5e6102d64fb3edf9200ef64726ac8834b4e8e130113fb2474b21c0e69150995c",
+      "digest": "b8be924e241eaf4515f35e7bc89289805c4bd1389f0c2d3e9a2b65cd0b5a15f1",
+      "previouslyPublished": true,
+      "publishedChecksum": "5e6102d64fb3edf9200ef64726ac8834b4e8e130113fb2474b21c0e69150995c",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-apply-patch": {
+      "checksum": "69a1fea231eee29b4e2bb6632c5a188590cc3031822c5066a1454fbf3cbe905f",
+      "digest": "a8d25cc30bfb3309a79140a4ac81a955d5eb80718ea13deb1b51a8c41376feea",
+      "previouslyPublished": true,
+      "publishedChecksum": "69a1fea231eee29b4e2bb6632c5a188590cc3031822c5066a1454fbf3cbe905f",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-arg0": {
+      "checksum": "c8d36347530dfcbc9c0569e8b3cf0b3afbbbcd027c7bdb2094dd10f656b98c09",
+      "digest": "f288315a6fe422b257073949761bf08313485cc74361422a5d42d620a6153438",
+      "previouslyPublished": true,
+      "publishedChecksum": "c8d36347530dfcbc9c0569e8b3cf0b3afbbbcd027c7bdb2094dd10f656b98c09",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-async-utils": {
+      "checksum": "bedbfe28d6b1f5090a15aacd99c47d1656760c6a14db0ec43f5f078d7b4bf8da",
+      "digest": "84a1e6034d93a58507acadc72a3f51ff8ac5e5dd9d3e9e1faa6919d653b5f0de",
+      "previouslyPublished": true,
+      "publishedChecksum": "bedbfe28d6b1f5090a15aacd99c47d1656760c6a14db0ec43f5f078d7b4bf8da",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.1.0"
+    },
+    "typeduck-codex-aws-auth": {
+      "checksum": "c3b9477f44ad6edd0f01bbc09d982ee8813415b0e886eeff80039ec2e324268b",
+      "digest": "94bb9523fb1b0aa1bad0e5efdc55774695a5be2ef9862a10464c098b85a0670a",
+      "previouslyPublished": true,
+      "publishedChecksum": "c3b9477f44ad6edd0f01bbc09d982ee8813415b0e886eeff80039ec2e324268b",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-backend-client": {
+      "checksum": "3e27cabce4d0889125be1ee24803dfc0e1d0f48fdf78dfc9d3c18a21d722049d",
+      "digest": "4f3f645e4678b222787e6141a22b8eef7630d58e167ac98f6f001e004cadeb1c",
+      "previouslyPublished": true,
+      "publishedChecksum": "3e27cabce4d0889125be1ee24803dfc0e1d0f48fdf78dfc9d3c18a21d722049d",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-backend-openapi-models": {
+      "checksum": "e8339b6c4a346a447fb25f5c835e047c4f5d5b54d1ed30fe30ba941abb61702d",
+      "digest": "74df5827c396b43fd330661318624ec260746a7614e40d143fac81577183989d",
+      "previouslyPublished": true,
+      "publishedChecksum": "e8339b6c4a346a447fb25f5c835e047c4f5d5b54d1ed30fe30ba941abb61702d",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-chatgpt": {
+      "checksum": "98e13ad4957d57ac233340b0b4ad477dc135dfbae95bf7832cb4cb0f6b2f2e76",
+      "digest": "18b956de33685290869f25955d4bbf2592120d71067eeb830d54e1ef11725a29",
+      "previouslyPublished": true,
+      "publishedChecksum": "98e13ad4957d57ac233340b0b4ad477dc135dfbae95bf7832cb4cb0f6b2f2e76",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-client": {
+      "checksum": "5c0b35477bb417b8e1206fb838be236eb078dcb0c4394317feaed5a3a3b8d92f",
+      "digest": "22e7a772909ef1b60c58e4dbb8f2fe8a7c41e59a0210d50800047c12ec35e41a",
+      "previouslyPublished": true,
+      "publishedChecksum": "5c0b35477bb417b8e1206fb838be236eb078dcb0c4394317feaed5a3a3b8d92f",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-cloud-config": {
+      "checksum": "d51c1359420c2da4959028023cd03e0e55d5d200d5fcefdb6bf9475965bb9d38",
+      "digest": "3048c4422cd1d68a2519837af2814bde1d46ad8d572cbff8358c5477dd779e47",
+      "previouslyPublished": true,
+      "publishedChecksum": "d51c1359420c2da4959028023cd03e0e55d5d200d5fcefdb6bf9475965bb9d38",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-code-mode": {
+      "checksum": "8dde691a1d06e7c89640dacb7e44d2a20757a44fe2672bae022c94cc0adf98c7",
+      "digest": "a419a68ec4e8a24b61ef3a16c0f93d12af956efaef5137f9da1639c19100d9fa",
+      "previouslyPublished": true,
+      "publishedChecksum": "8dde691a1d06e7c89640dacb7e44d2a20757a44fe2672bae022c94cc0adf98c7",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-code-mode-protocol": {
+      "checksum": "204796b248ffd1e0d66e2d0024d297fdb6ab4517efe1633444bfc7966ecf8458",
+      "digest": "1e5d4ddc29b37d989c6a5622ae111c718d7a5682e761032b268618eef587256c",
+      "previouslyPublished": true,
+      "publishedChecksum": "204796b248ffd1e0d66e2d0024d297fdb6ab4517efe1633444bfc7966ecf8458",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-collaboration-mode-templates": {
+      "checksum": "5eb137609687814deba3e1fa0c049811a39d66e1bdc2c648c4f2cac2414b12f0",
+      "digest": "81312cfa35232b1b5377e7a2f9f5ddcdc834939bb225c6efeade674db2d5a845",
+      "previouslyPublished": true,
+      "publishedChecksum": "5eb137609687814deba3e1fa0c049811a39d66e1bdc2c648c4f2cac2414b12f0",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-config": {
+      "checksum": "14fc9f5afcecf4f6c30b73599325d50c6c0677b1f0b4d9d87d5a30e1053a896a",
+      "digest": "456bcaf2b4c94f1db6f585f2d7b63dc896d80e8527d5608e81b6ea4ebfac95a6",
+      "previouslyPublished": true,
+      "publishedChecksum": "14fc9f5afcecf4f6c30b73599325d50c6c0677b1f0b4d9d87d5a30e1053a896a",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-connectors": {
+      "checksum": "91824301585518821ef681955fe9d81535e5bf8f5fe2852ef15152956673a600",
+      "digest": "485b47e060472a0e4c23c355b64769575b2fe93f7a148d4a437d8b56672e5445",
+      "previouslyPublished": true,
+      "publishedChecksum": "91824301585518821ef681955fe9d81535e5bf8f5fe2852ef15152956673a600",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-connectors-extension": {
+      "checksum": "a23772187318a17d936de633ff9bfba9ed801fc43d4e1f4558f48535ffa5abbf",
+      "digest": "bfad91d8081c85c676c7077d1070936a922d89703e895e35d196693eef3ca760",
+      "previouslyPublished": true,
+      "publishedChecksum": "a23772187318a17d936de633ff9bfba9ed801fc43d4e1f4558f48535ffa5abbf",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-context-fragments": {
+      "checksum": "f1e3709bda9fcc38c4c346dffba99a579ba98ea09478048eb1492f10f0871b4b",
+      "digest": "57ea5d3174e573ded4d223839a5aeabd9e23a1f7c844a011754be3762ced087c",
+      "previouslyPublished": true,
+      "publishedChecksum": "f1e3709bda9fcc38c4c346dffba99a579ba98ea09478048eb1492f10f0871b4b",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-core": {
+      "checksum": "43814cb376d5c7686cf9d25a7eed2cf6170dd6e6a67f9e2ec5ccf61ae2b75b2a",
+      "digest": "65e4c6e2a002fafadea45a5f06c6fcaba1b33320cd85dcd0b61dda4ca551afa1",
+      "previouslyPublished": true,
+      "publishedChecksum": "43814cb376d5c7686cf9d25a7eed2cf6170dd6e6a67f9e2ec5ccf61ae2b75b2a",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-core-plugins": {
+      "checksum": "a7101f2c84136a1913437490d709874c7382255b94037ae720ae3b693e145873",
+      "digest": "6711156dfb440b4d7469f0230e8d33e486ac874a26a33ca29d35ca0fc084f338",
+      "previouslyPublished": true,
+      "publishedChecksum": "a7101f2c84136a1913437490d709874c7382255b94037ae720ae3b693e145873",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-core-skills": {
+      "checksum": "36e872eed439f9c40ec3f61c48b480ecdfabc23b2e5f327bf3b0baf922529645",
+      "digest": "52c18b7c7b11f89e7ad529a0fd6134739a654bfd254df0e196991763c758ad09",
+      "previouslyPublished": true,
+      "publishedChecksum": "36e872eed439f9c40ec3f61c48b480ecdfabc23b2e5f327bf3b0baf922529645",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-exec-server": {
+      "checksum": "b5b07fe2206fe43c97aaf3e8c4042ac69666d12b3dc73d08a9bd8c01acbb5158",
+      "digest": "95f7e59472e95f1cf0823b401977c85e22d46aa8b7f957780c0cb501a93a875d",
+      "previouslyPublished": true,
+      "publishedChecksum": "b5b07fe2206fe43c97aaf3e8c4042ac69666d12b3dc73d08a9bd8c01acbb5158",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-exec-server-protocol": {
+      "checksum": "1b24a233b3d9a2a668c23d739591a73928aa7e3af46bab1a17aa904ef368f71c",
+      "digest": "bc6ba4e58a36dec733dd72b3d6e39e2049c5305efd9ae28b6674a8e1face5a83",
+      "previouslyPublished": true,
+      "publishedChecksum": "1b24a233b3d9a2a668c23d739591a73928aa7e3af46bab1a17aa904ef368f71c",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-execpolicy": {
+      "checksum": "d3caa18287436fa48cfc4490223cc026f94f2a2a65da9d5aeb04c5c00eacf0e6",
+      "digest": "4c377bfb1e5a5c43eb742ae1c0f292e20c56555ef871c6daf73d8de89c66fefc",
+      "previouslyPublished": true,
+      "publishedChecksum": "d3caa18287436fa48cfc4490223cc026f94f2a2a65da9d5aeb04c5c00eacf0e6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.30.0"
+    },
+    "typeduck-codex-experimental-api-macros": {
+      "checksum": "c40d520c79b27cc13797d80bc9911ffd67be25b5eb3509ec8b374198132b01a6",
+      "digest": "a9d4c50e6226385b3bd860cc04e1250c4ba366f8656a9be81a54339667da654b",
+      "previouslyPublished": true,
+      "publishedChecksum": "c40d520c79b27cc13797d80bc9911ffd67be25b5eb3509ec8b374198132b01a6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.31.0"
+    },
+    "typeduck-codex-extension-api": {
+      "checksum": "99925a0951c44b6b76126d25c765fc2dfea417bed03d56b0f13d0082f8f68efd",
+      "digest": "70f3aa27f216d2288f3a0a50eec2cc28922a769e8f25a2992e057182dca57ab5",
+      "previouslyPublished": true,
+      "publishedChecksum": "99925a0951c44b6b76126d25c765fc2dfea417bed03d56b0f13d0082f8f68efd",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-extension-items": {
+      "checksum": "9764acc64d1ebb25e51d55955b64d5c92db67bd23113c14fb660f47da25ddba4",
+      "digest": "12c1369bd824d64e8de50d67dc03ca79df5336498e4651227b6a2b818c5f94db",
+      "previouslyPublished": true,
+      "publishedChecksum": "9764acc64d1ebb25e51d55955b64d5c92db67bd23113c14fb660f47da25ddba4",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.33.0"
+    },
+    "typeduck-codex-external-agent-migration": {
+      "checksum": "9b02c1a832bf9b879d304b0607c4968291ea86b479e2eb0e047d0739fabdc999",
+      "digest": "c2c9ba37947f0aae193e2f3ba2649ebacd7b50ba9f4c9e43cb60f4b3f9f4abbe",
+      "previouslyPublished": true,
+      "publishedChecksum": "9b02c1a832bf9b879d304b0607c4968291ea86b479e2eb0e047d0739fabdc999",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-features": {
+      "checksum": "28688ac385e6255538b68768ca47c027d3e8c69f43550143fbae3d5138f1df45",
+      "digest": "a47e1df2d946acb023fbc0417fc23b5fdc49c66451e5505c185662bbe6d93a3b",
+      "previouslyPublished": true,
+      "publishedChecksum": "28688ac385e6255538b68768ca47c027d3e8c69f43550143fbae3d5138f1df45",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-feedback": {
+      "checksum": "e3d6a86093669a4902855b5c8615fef384715110046bdcf5bd7f58fff71142e6",
+      "digest": "2c6323289f2c0d67a1761339b466e6d643a63cfe98fadd8c43ea9736be699527",
+      "previouslyPublished": true,
+      "publishedChecksum": "e3d6a86093669a4902855b5c8615fef384715110046bdcf5bd7f58fff71142e6",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-file-search": {
+      "checksum": "670258c33c86a950e3ce2bf0fbbba90da679bb056a6c487b13a9193d1cd08ac6",
+      "digest": "6924ed064c05746da25d8d65172884df1ea50541d8a6666149fad8c0a1c743ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "670258c33c86a950e3ce2bf0fbbba90da679bb056a6c487b13a9193d1cd08ac6",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-file-system": {
+      "checksum": "e485e35fef621ad744089d054e46c72938bbbe402ccc0822a95ff5e288e46a2a",
+      "digest": "2ae71012fabd8b68be3eab77e166d4e8f8c79cf9b468cfae9ecd97899e9f4d82",
+      "previouslyPublished": true,
+      "publishedChecksum": "e485e35fef621ad744089d054e46c72938bbbe402ccc0822a95ff5e288e46a2a",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.38.0"
+    },
+    "typeduck-codex-file-watcher": {
+      "checksum": "311f1890962e691ddc8abd3cb0964a5c9b1f4597408d903015f327ba49a06bdd",
+      "digest": "0ec7ce3c8bb91823140bbc43589def495ec8700395ddeb0bc70f5e5ba263ce53",
+      "previouslyPublished": true,
+      "publishedChecksum": "311f1890962e691ddc8abd3cb0964a5c9b1f4597408d903015f327ba49a06bdd",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-git-utils": {
+      "checksum": "228dd6e2f8820d576451e1b2c9f1099338baaa0d5aba8234fd2589a5cc82894c",
+      "digest": "be010e775c16c8267e7f80134d9f6589404fb1c450c5feb5e6c081d460e96d13",
+      "previouslyPublished": true,
+      "publishedChecksum": "228dd6e2f8820d576451e1b2c9f1099338baaa0d5aba8234fd2589a5cc82894c",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.40.0"
+    },
+    "typeduck-codex-goal-extension": {
+      "checksum": "3f2d0b4dc95e6a2b29e594246049474116bae6d0ef319904cafdc0560abb054f",
+      "digest": "75368066f95cda5a1a1bceeff74b861531b30875a3e9d60313fad45f8b030f8c",
+      "previouslyPublished": true,
+      "publishedChecksum": "3f2d0b4dc95e6a2b29e594246049474116bae6d0ef319904cafdc0560abb054f",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-guardian": {
+      "checksum": "3c3d81d2591c77ce6664e1cd44b44fb486566d2bff9cd732ce09497d1c2e4e45",
+      "digest": "560a18fc65d142275b8fdc91472aa5b9e7f7bf4e9b1118e02f98b21e2682c51a",
+      "previouslyPublished": true,
+      "publishedChecksum": "3c3d81d2591c77ce6664e1cd44b44fb486566d2bff9cd732ce09497d1c2e4e45",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-home": {
+      "checksum": "daa0ab063f79a417a85b061c740d78721279caf61f5894dda74b727ffdfe0952",
+      "digest": "162af0da6607e5f4ec86ccf9f5f43421fc23361c4441dc7dea177da01fdfc1d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "daa0ab063f79a417a85b061c740d78721279caf61f5894dda74b727ffdfe0952",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-hooks": {
+      "checksum": "7e3b452ad02d050cae60d49cbfcb86bf2c5c4fc6b64f686ee9a6e2f6bfe7a07a",
+      "digest": "63d764a0ebc3b4e409c23ba3733ca16d3407c6b7ed1e6e151723dcf5c6aa9945",
+      "previouslyPublished": true,
+      "publishedChecksum": "7e3b452ad02d050cae60d49cbfcb86bf2c5c4fc6b64f686ee9a6e2f6bfe7a07a",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-http-client": {
+      "checksum": "42fc1e53acf870038e5854ce5b549dc32d3d8cda9abb26bf2c276ea3c6fbe338",
+      "digest": "d806fe2ad9f4b8e93a33792041710722649431931564604aca063cc8edd4ae64",
+      "previouslyPublished": true,
+      "publishedChecksum": "42fc1e53acf870038e5854ce5b549dc32d3d8cda9abb26bf2c276ea3c6fbe338",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.45.0"
+    },
+    "typeduck-codex-image-generation-extension": {
+      "checksum": "6535b7ba467c3ca9768a7c73bc4746e98e40d1418301a92c2ed039ddded9f28e",
+      "digest": "c79c3ad616fc19fac43400a30711a305aa9c3469acf1e5ad5eeae976f372dd0c",
+      "previouslyPublished": true,
+      "publishedChecksum": "6535b7ba467c3ca9768a7c73bc4746e98e40d1418301a92c2ed039ddded9f28e",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-install-context": {
+      "checksum": "88d0c44a261a63512f6e7030837aa2f394ed2c291467f43e6fea09f543f953e7",
+      "digest": "04c1f5a4bb9be9278c7e49087c0e90361998fd6665f57d941cc1ae49370c1fef",
+      "previouslyPublished": true,
+      "publishedChecksum": "88d0c44a261a63512f6e7030837aa2f394ed2c291467f43e6fea09f543f953e7",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-keyring-store": {
+      "checksum": "dd2fc38c2a931dd5d85d249a9228c53f3837f48ff7f9634fb19d302073f960e8",
+      "digest": "b7e1ed79727bd354f3ccece75fedcfbe5f13b51afa864511bba724585ba475ee",
+      "previouslyPublished": true,
+      "publishedChecksum": "dd2fc38c2a931dd5d85d249a9228c53f3837f48ff7f9634fb19d302073f960e8",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-linux-sandbox": {
+      "checksum": "b0db9fe675cc2d0d1e029966046ff19f176342a370ad23b73686ca8e2a9213ad",
+      "digest": "97d702a7ce5426858312b2dea4a45886ac725546b5b9848e7d1ad8babbd342d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "b0db9fe675cc2d0d1e029966046ff19f176342a370ad23b73686ca8e2a9213ad",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-login": {
+      "checksum": "1f76585e899f2c948867a6d8dbc355979789303152edf81e79a8d98afe90fcee",
+      "digest": "c4174ef9bc17b5bb7761169b593107651ef5f02d31bf7c692a345d9b7ee8a7f1",
+      "previouslyPublished": true,
+      "publishedChecksum": "1f76585e899f2c948867a6d8dbc355979789303152edf81e79a8d98afe90fcee",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-mcp": {
+      "checksum": "7134e8bfa852561924ca798212bf94319f04a1ae7eaf8190163221a2658e68e2",
+      "digest": "ece26ea02f4d471288cc2d0518bb8ee915bba6eca24f95f95e0db72438cf9715",
+      "previouslyPublished": true,
+      "publishedChecksum": "7134e8bfa852561924ca798212bf94319f04a1ae7eaf8190163221a2658e68e2",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-mcp-extension": {
+      "checksum": "ed713be9b45df4607977f854b4803f960f111d7bb5469d9fe381103015fdfd54",
+      "digest": "487799472a8331c76520d345777dae5f63ab33e193f38d4b2ac4d70d879b40be",
+      "previouslyPublished": true,
+      "publishedChecksum": "ed713be9b45df4607977f854b4803f960f111d7bb5469d9fe381103015fdfd54",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-memories-extension": {
+      "checksum": "5abbd6db6b83790cfeac8c0508b9f2d8c8c2edece2de4609827c99ed2915e6d1",
+      "digest": "af19cc9816498ddc44d4598c5a1952549fdd1972a29c230997ee410e2a3411bf",
+      "previouslyPublished": true,
+      "publishedChecksum": "5abbd6db6b83790cfeac8c0508b9f2d8c8c2edece2de4609827c99ed2915e6d1",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-memories-read": {
+      "checksum": "b8373676f6fec304a0cf73c87f02098ad020f6d93229f924f017df8435e8bf2b",
+      "digest": "c2f381494d0f4198874acb5e6c62b2b48e2d408f3c897db65e9fb6990b8eb52a",
+      "previouslyPublished": true,
+      "publishedChecksum": "b8373676f6fec304a0cf73c87f02098ad020f6d93229f924f017df8435e8bf2b",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-memories-write": {
+      "checksum": "2d1333e54515c3215640a637c38eb86fa230537fb60e25b9ce3232e4e5d1ec1f",
+      "digest": "1b6d06df660c028d4837800ce29e6b1a3b35c0bf4c162b86cb32058efb67f819",
+      "previouslyPublished": true,
+      "publishedChecksum": "2d1333e54515c3215640a637c38eb86fa230537fb60e25b9ce3232e4e5d1ec1f",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-model-provider": {
+      "checksum": "bb4b214374868cf4e029001b970ff88bfed35896f4232e65c73cbe296c62afb4",
+      "digest": "7e00e5773f1bfc267747f5a45afd863752c4047f2cbab2b20b9832b109abe1e0",
+      "previouslyPublished": true,
+      "publishedChecksum": "bb4b214374868cf4e029001b970ff88bfed35896f4232e65c73cbe296c62afb4",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-model-provider-info": {
+      "checksum": "da1f0047ca4f49dbd0bd24573b240ca87bce96828351502ef467a7ce33eadda4",
+      "digest": "a94293363a044d36ee76c041a5f43b902702ce0e8d2bfee36f89903d96ee04ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "da1f0047ca4f49dbd0bd24573b240ca87bce96828351502ef467a7ce33eadda4",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-models-manager": {
+      "checksum": "38985e9314cfb552daa304e8f07bd7c203e766a3a363452fd5e9d706755fb772",
+      "digest": "67e6c96ba354ab3e9981a3a8698fb70fa8c3b16a78cb57614c527b4eb6c93d96",
+      "previouslyPublished": true,
+      "publishedChecksum": "38985e9314cfb552daa304e8f07bd7c203e766a3a363452fd5e9d706755fb772",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-network-proxy": {
+      "checksum": "2f7eccbacf59dc2d29e50b8ad93ccde086edbb4fe82b73462e933f34fbfcdde8",
+      "digest": "1b65e4e742b3cc3e89686e3b9756e37fc63c6b5ca41d9d9b7579535b3a1a81ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "2f7eccbacf59dc2d29e50b8ad93ccde086edbb4fe82b73462e933f34fbfcdde8",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.59.0"
+    },
+    "typeduck-codex-otel": {
+      "checksum": "ff2784946cc183e825b2cbc836f2c0096ab1290a3323624d4a57b073ffdf2eb1",
+      "digest": "d7bbe16a0f8ac10410f73fd17e79a3827274f6a2d2ee2e0ec85d97278e8f56bc",
+      "previouslyPublished": true,
+      "publishedChecksum": "ff2784946cc183e825b2cbc836f2c0096ab1290a3323624d4a57b073ffdf2eb1",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-plugin": {
+      "checksum": "56eff9945882d9ecf18b277c3747f801047b335e348e600f947dd75ff718b23f",
+      "digest": "b17f73df7726d855c031ff6c753cd3d97bd0f15dc38c0808c1231badf46c2a30",
+      "previouslyPublished": true,
+      "publishedChecksum": "56eff9945882d9ecf18b277c3747f801047b335e348e600f947dd75ff718b23f",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-process-hardening": {
+      "checksum": "4866456ee9939a11ef3494c9288fc08c1b45f4dc50f3702b4108c1be29245b1e",
+      "digest": "ada17cad84c2f100fbc0e485401a10bae2b95b7d79ff1b5da1f757a27d4a206c",
+      "previouslyPublished": true,
+      "publishedChecksum": "4866456ee9939a11ef3494c9288fc08c1b45f4dc50f3702b4108c1be29245b1e",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-prompts": {
+      "checksum": "b82748b05f6093de9ffc64659248a58e27a4ff709ca38cdcd0c1d127ebc37d94",
+      "digest": "ea4e350d32798382008b1788da165ea7b529174a53a1e21783a78c866456d708",
+      "previouslyPublished": true,
+      "publishedChecksum": "b82748b05f6093de9ffc64659248a58e27a4ff709ca38cdcd0c1d127ebc37d94",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-protocol": {
+      "checksum": "e8ac78b455b9c1361864c94abc328ca4ee171ab494151d95a3f6936c589dc755",
+      "digest": "9bc80155c8213b9c9d73a8b4cc55504da39ffa3fc799a9175224425f6e2873b3",
+      "previouslyPublished": true,
+      "publishedChecksum": "e8ac78b455b9c1361864c94abc328ca4ee171ab494151d95a3f6936c589dc755",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.64.0"
+    },
+    "typeduck-codex-response-debug-context": {
+      "checksum": "a84d5d95863523c6069523cb670c452620d3de6da7c07cd00272481f41523d51",
+      "digest": "c71bb062715b7dd7750b2d4decce1a2787caed47dbb8c710c2e35228e1bcd201",
+      "previouslyPublished": true,
+      "publishedChecksum": "a84d5d95863523c6069523cb670c452620d3de6da7c07cd00272481f41523d51",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-rmcp-client": {
+      "checksum": "37618c04a4bd01a80ccd73e7363dc0bc93f86bf4e1a88091b573e215416ed614",
+      "digest": "6cc312859b5641e0d39fad3d30fdfd96f12c55990015a0e27702b66e9140343d",
+      "previouslyPublished": true,
+      "publishedChecksum": "37618c04a4bd01a80ccd73e7363dc0bc93f86bf4e1a88091b573e215416ed614",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-rollout": {
+      "checksum": "b5355e0b13ab1f35bfe49af4ac79e0f1e7e183d092642161fbd79111a73652cc",
+      "digest": "a5356d7be6d074587c34f62e8d3e773597b46dceb99f5e73de91d323d5defa05",
+      "previouslyPublished": true,
+      "publishedChecksum": "b5355e0b13ab1f35bfe49af4ac79e0f1e7e183d092642161fbd79111a73652cc",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-rollout-trace": {
+      "checksum": "2fb9e30e91a6af535639cf9bf3c9f605a1f98e73b2241cc5d08f8fb4c05a7b86",
+      "digest": "ac53081a52d19f3c591caf5ee51f12a014fedff0755af0306331494b3d83b4a4",
+      "previouslyPublished": true,
+      "publishedChecksum": "2fb9e30e91a6af535639cf9bf3c9f605a1f98e73b2241cc5d08f8fb4c05a7b86",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-sandboxing": {
+      "checksum": "d068ca1e9ff8bc74e0d8209b4c9d739cf76149a257ffc3ce2329ea25401b184c",
+      "digest": "72d700d5b922077c007d2fce45ca3aca82a2d46edaa5dde2edb612421b999e4a",
+      "previouslyPublished": true,
+      "publishedChecksum": "d068ca1e9ff8bc74e0d8209b4c9d739cf76149a257ffc3ce2329ea25401b184c",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-secrets": {
+      "checksum": "15775eb8d75b56556215d8d48f2b0b741d47ce89bfbb133e6d6c6a009b1cd367",
+      "digest": "07d0b4934aafdc438b987f886d775d54ca084538a8d018f3d577d9782e28f02c",
+      "previouslyPublished": true,
+      "publishedChecksum": "15775eb8d75b56556215d8d48f2b0b741d47ce89bfbb133e6d6c6a009b1cd367",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-shell-command": {
+      "checksum": "18ad2d8adef81b7605ad32d8c56ba64e97cc60fd68cef0437ecf2149f4bec172",
+      "digest": "89bd955ddf4507c9693e9a5e111141203f7d7d9202470b9616a1036a98951712",
+      "previouslyPublished": true,
+      "publishedChecksum": "18ad2d8adef81b7605ad32d8c56ba64e97cc60fd68cef0437ecf2149f4bec172",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.71.0"
+    },
+    "typeduck-codex-shell-escalation": {
+      "checksum": "7c0bb9bb24fb4774c792ede0fdf2a7828ca207b9d1bc9627fb3ce9387eee403a",
+      "digest": "5eb8786eb1586e702362a92325dc4649705de31a09a63b20c4fd51941d3d160a",
+      "previouslyPublished": true,
+      "publishedChecksum": "7c0bb9bb24fb4774c792ede0fdf2a7828ca207b9d1bc9627fb3ce9387eee403a",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-skills": {
+      "checksum": "32bfc73467d882f9b733a032b25a03ea568b80b9ce236cf3e067bc447744db8d",
+      "digest": "041ad96dba952672d1df5f3817a7dc78b10dfbcf2332fb9eea03a323f8b10690",
+      "previouslyPublished": true,
+      "publishedChecksum": "32bfc73467d882f9b733a032b25a03ea568b80b9ce236cf3e067bc447744db8d",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-skills-extension": {
+      "checksum": "2c997fd7519dd2aa51a3c5071f693e23ed4d01988471da1c8da201b8f4ac0ade",
+      "digest": "ce5a66e9bbe8f1ac694d1e8f84dcd98e8ef3098cbf3d882d615223670330de21",
+      "previouslyPublished": true,
+      "publishedChecksum": "2c997fd7519dd2aa51a3c5071f693e23ed4d01988471da1c8da201b8f4ac0ade",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-state": {
+      "checksum": "bfcd279aa4274819785cc315e150e52947bb5bb2508ebbd898e26654fd41f02c",
+      "digest": "4c6864a664dfc26ac61902191fda138c070e4c0a0a4897b54d579c988bbefc25",
+      "previouslyPublished": true,
+      "publishedChecksum": "bfcd279aa4274819785cc315e150e52947bb5bb2508ebbd898e26654fd41f02c",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.75.0"
+    },
+    "typeduck-codex-terminal-detection": {
+      "checksum": "c8942ad1c5b1c1cdbbaa568f441362d3ce2f0d9acbf82ec030cad637fc32fe60",
+      "digest": "13f1183f093e5c148c0998bcb4d11f3f7f2b415efb63e128b7434ff0057de793",
+      "previouslyPublished": true,
+      "publishedChecksum": "c8942ad1c5b1c1cdbbaa568f441362d3ce2f0d9acbf82ec030cad637fc32fe60",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-thread-store": {
+      "checksum": "646e34296f7746a74cd3d97a58caf9cc201340d5b605632b8bef2716bdeadfce",
+      "digest": "31b7287ad61c8360628e4cfd248588e7b9c0c4aec3b64b00d24b6881a83a39bb",
+      "previouslyPublished": true,
+      "publishedChecksum": "646e34296f7746a74cd3d97a58caf9cc201340d5b605632b8bef2716bdeadfce",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-tools": {
+      "checksum": "762a5eccdcea32455e76045153c09e3b4b80a008647b7e7dbeecdfdcf5e74feb",
+      "digest": "e22d9d057a2a9b96c9eef9378ff75d1938d911a92ca6027a6bffb70e5b9e889f",
+      "previouslyPublished": true,
+      "publishedChecksum": "762a5eccdcea32455e76045153c09e3b4b80a008647b7e7dbeecdfdcf5e74feb",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-uds": {
+      "checksum": "0cdb5801a4f7e0a3b2b18ac58152d6da4ad1d2d51d13d859aef2b0076e15c30a",
+      "digest": "aa44e499f4a5baa072bf94055672bd529bba249f79287cd0732b2b0c86d80d63",
+      "previouslyPublished": true,
+      "publishedChecksum": "0cdb5801a4f7e0a3b2b18ac58152d6da4ad1d2d51d13d859aef2b0076e15c30a",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-absolute-path": {
+      "checksum": "9ffe6f81f65eb834e23336a9f0ce02c085ca46b9750d93f6bebc75090c4d5b14",
+      "digest": "27348b75014b26234e83bf704ce2cd0a26ba40cf641a1ac82d055b38795eef50",
+      "previouslyPublished": true,
+      "publishedChecksum": "9ffe6f81f65eb834e23336a9f0ce02c085ca46b9750d93f6bebc75090c4d5b14",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.80.0"
+    },
+    "typeduck-codex-utils-cache": {
+      "checksum": "4f170459cff3387e0d3ea66235be95885ccc675daf49fca9c119c4c503ba647a",
+      "digest": "874359a4890790919cd27a3491b8e381dea600be7507c8c38facdb9323cc26d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "4f170459cff3387e0d3ea66235be95885ccc675daf49fca9c119c4c503ba647a",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.81.0"
+    },
+    "typeduck-codex-utils-cli": {
+      "checksum": "f9b1d6ef0e69bc14d70cf28cae38951ac877c95d2b7c28814ac694a19bf96fcc",
+      "digest": "e123a6ba8bdb1dbd8bc2fac9b79c406302ac18b0bb02d4651422b63d2135cd74",
+      "previouslyPublished": true,
+      "publishedChecksum": "f9b1d6ef0e69bc14d70cf28cae38951ac877c95d2b7c28814ac694a19bf96fcc",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-home-dir": {
+      "checksum": "3640ed0874f3bcfc014712bf8ba0edddc0043f2283edd2270a6d9bd39097219d",
+      "digest": "6920fb9c314109dfed0be10622be25c74205c058a953f61405086d619c425865",
+      "previouslyPublished": true,
+      "publishedChecksum": "3640ed0874f3bcfc014712bf8ba0edddc0043f2283edd2270a6d9bd39097219d",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.83.0"
+    },
+    "typeduck-codex-utils-image": {
+      "checksum": "ff94ef89d7b5678819e1e808b5ec80f4b21a631c60de6fae2621d0c7b9926312",
+      "digest": "87665c3bcf7eddf54d02a68265a27a78205fa0bea835c5482998834db833acd6",
+      "previouslyPublished": true,
+      "publishedChecksum": "ff94ef89d7b5678819e1e808b5ec80f4b21a631c60de6fae2621d0c7b9926312",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.84.0"
+    },
+    "typeduck-codex-utils-json-to-toml": {
+      "checksum": "08fb6a422e4da76f2eb933ab4a0a9ed21488932025d8fe539ce269524a479133",
+      "digest": "2b14cd96631cf7f4c8fbd7f0dacac2fd837f012d85bb3da8a59a39874a587c19",
+      "previouslyPublished": true,
+      "publishedChecksum": "08fb6a422e4da76f2eb933ab4a0a9ed21488932025d8fe539ce269524a479133",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-output-truncation": {
+      "checksum": "6b9421fd451793c8be5238a3bc38b7bd64eb303155515801e775bd217b9d27b8",
+      "digest": "d3bf59fcb1be85e6bd804c9d6fde8c433bebcb406293a5aea7362fc78e923488",
+      "previouslyPublished": true,
+      "publishedChecksum": "6b9421fd451793c8be5238a3bc38b7bd64eb303155515801e775bd217b9d27b8",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-path": {
+      "checksum": "606b84de44c2218d95158184a4cccce4a06ffb67c64fedc7f27e922db20d0c96",
+      "digest": "581298c01579db8f083a4a73e99c76e0c0696dc9cd52091df14d8f43d62edc6a",
+      "previouslyPublished": true,
+      "publishedChecksum": "606b84de44c2218d95158184a4cccce4a06ffb67c64fedc7f27e922db20d0c96",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-path-uri": {
+      "checksum": "edbd1a1c22497e0e98bb43167752108e7a5f5909cbb8dd65b912d29e069165f6",
+      "digest": "8e8ca8aa8888949e68232df224b1a45996ec031072ba2ea143f1cbc6b287a67b",
+      "previouslyPublished": true,
+      "publishedChecksum": "edbd1a1c22497e0e98bb43167752108e7a5f5909cbb8dd65b912d29e069165f6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.88.0"
+    },
+    "typeduck-codex-utils-plugins": {
+      "checksum": "50d43fe945aac26f50509dfea217789d2062a4111d5686d032df64b49319edb9",
+      "digest": "643acb80d07c6c0b36b783496fa89f60455135ebd1fb06e4c8ecf9a4f8e2b12a",
+      "previouslyPublished": true,
+      "publishedChecksum": "50d43fe945aac26f50509dfea217789d2062a4111d5686d032df64b49319edb9",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-pty": {
+      "checksum": "5c7595a84caed95f01f23cda14d7d1bc92d075405fb866ff9257085e96b0339d",
+      "digest": "6d13554ecc136f95210ba1ade4901ee0aaf3d05c0e20834ecaa840f7f3d1b7e6",
+      "previouslyPublished": true,
+      "publishedChecksum": "5c7595a84caed95f01f23cda14d7d1bc92d075405fb866ff9257085e96b0339d",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-rustls-provider": {
+      "checksum": "49adb18faaf4533099d9bd1a6610a5afc4f7835a10065f1a0bb8e0caade72546",
+      "digest": "3482193a548feb084f2a2aeb3531c80515aa03791307c0e4462bf43a1b3f68ba",
+      "previouslyPublished": true,
+      "publishedChecksum": "49adb18faaf4533099d9bd1a6610a5afc4f7835a10065f1a0bb8e0caade72546",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.91.0"
+    },
+    "typeduck-codex-utils-stream-parser": {
+      "checksum": "8d0771a96021b02b2857c90b4d045edb8d4afd97543930dccef1310ee70a3940",
+      "digest": "446413d059e9bd9c2c2756ee9e9ad725dc1815b4fabeb260befe018ff5a15019",
+      "previouslyPublished": true,
+      "publishedChecksum": "8d0771a96021b02b2857c90b4d045edb8d4afd97543930dccef1310ee70a3940",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-string": {
+      "checksum": "d6d858b64f17e0a8717489789e3054e8f5e48acdf29a43e9ee4a7f8e3bcb1474",
+      "digest": "adde70d22ce077b2ebe645298616c524cb95d3baa1894c74649f33b10faccbae",
+      "previouslyPublished": true,
+      "publishedChecksum": "d6d858b64f17e0a8717489789e3054e8f5e48acdf29a43e9ee4a7f8e3bcb1474",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.93.0"
+    },
+    "typeduck-codex-utils-template": {
+      "checksum": "1c1852f3759c4530dd487d9a6d42768002cc5d449cef289d33c5c45098d348c6",
+      "digest": "3c659b0c4bd7e021a246adcdcfdb692b56266d56c112af9fbaf9283b0b3b55f8",
+      "previouslyPublished": true,
+      "publishedChecksum": "1c1852f3759c4530dd487d9a6d42768002cc5d449cef289d33c5c45098d348c6",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-web": {
+      "checksum": "3367f59e2efc0bf4d74e69937bc970e2fc42b2d199affa08c4ab30f850560fc2",
+      "digest": "4aebe6c22797fa936d25cc79266ecd24a3c1effb5bab5939832fe235e9674098",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-web",
+      "source": "workspace",
+      "version": "0.5.1"
+    },
+    "typeduck-codex-web-search-extension": {
+      "checksum": "4b6630c44070623410120c705f173abc1b387a9a101d1d1b9d303f8c51a17b65",
+      "digest": "17cf35260dddce4108bae9d3513affabab33a04bcff5afbf9e419b6dfc940cb3",
+      "previouslyPublished": true,
+      "publishedChecksum": "4b6630c44070623410120c705f173abc1b387a9a101d1d1b9d303f8c51a17b65",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-websocket-client": {
+      "checksum": "9ef747662d9743b4b765107dbc9ad6fce9dc598865c2f163d548b764beb6ad3f",
+      "digest": "e62ee0408fec7a1f0dab576d907bd83aaf0125de727cb5dbccbf93e5c025be92",
+      "previouslyPublished": true,
+      "publishedChecksum": "9ef747662d9743b4b765107dbc9ad6fce9dc598865c2f163d548b764beb6ad3f",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.17.0"
+    },
+    "typeduck-codex-windows-sandbox": {
+      "checksum": "328983989c47760e27fac7ce9ab44009d5e14df07d37f2e17db45d3915bd2e06",
+      "digest": "f0082fbea174d61f7480f58aea2df0196e20b472e13aa22be2fa99ed88156ce3",
+      "previouslyPublished": true,
+      "publishedChecksum": "328983989c47760e27fac7ce9ab44009d5e14df07d37f2e17db45d3915bd2e06",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.17.0"
+    },
+    "typeduck-nucleo": {
+      "checksum": "06f7063f0804c58b3ac7a254fc2b73de7d8e74fbc222e916ed25467177a2c58f",
+      "digest": "4d5adf5fd5329ec6fb86a04e96e0b40ad41578ab3195c76855d0ccbfa020c1c2",
+      "previouslyPublished": true,
+      "publishedChecksum": "06f7063f0804c58b3ac7a254fc2b73de7d8e74fbc222e916ed25467177a2c58f",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "git+https://github.com/helix-editor/nucleo.git?rev=4253de9faabb4e5c6d81d946a5e35a90f87347ee#4253de9faabb4e5c6d81d946a5e35a90f87347ee",
+      "version": "0.17.0"
+    },
+    "typeduck-nucleo-matcher": {
+      "checksum": "e3fd4fd90a52db61679b81d5b2608267881ca3768300fdb6d7d9783a1a3c11a7",
+      "digest": "be9bb35077f65eea20c5faef24d462de1584d8e6da640dc28293db2e4dab37dd",
+      "previouslyPublished": true,
+      "publishedChecksum": "e3fd4fd90a52db61679b81d5b2608267881ca3768300fdb6d7d9783a1a3c11a7",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "git+https://github.com/helix-editor/nucleo.git?rev=4253de9faabb4e5c6d81d946a5e35a90f87347ee#4253de9faabb4e5c6d81d946a5e35a90f87347ee",
+      "version": "0.17.0"
+    },
+    "typeduck-tokio-tungstenite": {
+      "checksum": "5dc231ab79aed703fbc16b84dda59d38508a91506d66c248021db157991e6b7c",
+      "digest": "0affdd07e58f2891d2c0ab6600df782dc83e01929f4613dee8b4cc584842619d",
+      "previouslyPublished": true,
+      "publishedChecksum": "5dc231ab79aed703fbc16b84dda59d38508a91506d66c248021db157991e6b7c",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "git+https://github.com/openai-oss-forks/tokio-tungstenite?rev=0e5b2d73aa18dd9f0a50ee9ff199d5aef7594186#0e5b2d73aa18dd9f0a50ee9ff199d5aef7594186",
+      "version": "0.17.0"
+    },
+    "typeduck-tungstenite": {
+      "checksum": "898f6e56b4946b13623789b312e6901b4066060170e5c7bf4c2ec371b7efa110",
+      "digest": "a2326cd6b3ab02446ec9badce549004bf52c6228c782c955e5668b5070492d91",
+      "previouslyPublished": true,
+      "publishedChecksum": "898f6e56b4946b13623789b312e6901b4066060170e5c7bf4c2ec371b7efa110",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "git+https://github.com/openai-oss-forks/tungstenite-rs?rev=4fffad30fe373adbdcffab9545e9e9bf4f2fc19f#4fffad30fe373adbdcffab9545e9e9bf4f2fc19f",
+      "version": "0.18.0"
+    }
+  },
+  "packages": {
+    "typeduck-codex-agent-extension": {
+      "digest": "f31e025487e6e67c1d20134545a329cf47caa429d4315ea43670990016f618f1",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.2.1"
+    },
+    "typeduck-codex-agent-graph-store": {
+      "digest": "acb8fddc095b2d6325c59e7594ac517bb8610554e742044fd72cfd84a28ccb7c",
+      "previouslyPublished": true,
+      "publishedChecksum": "66b43b34003c1f6a85f63f339bf1a4bba8a55793493ff2743fbe25f60b8754e5",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-agent-identity": {
+      "digest": "0c8be85223ba71fed79c1579b46eadfe9aac4b9cf6adf7d2d7e0eed3ce537187",
+      "previouslyPublished": true,
+      "publishedChecksum": "8bbc9b9a0fd10d9d6b2dfdf1a4104c5b883542763b4fa8cc9354a8c937d68f28",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-analytics": {
+      "digest": "41d66580a1fa23778ed66fe1bc13a98366ce0bc838309925ba1de7b81104d5e4",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.2.1"
+    },
+    "typeduck-codex-api": {
+      "digest": "8209e20503b484e183400a60a84fc1bcc34119b0ebdf4073588b42752461fdd4",
+      "previouslyPublished": true,
+      "publishedChecksum": "ac0972ba28820b44f9904db683dc46cde4acaa036fcaf24a85e3c79312097b1d",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-app-server": {
+      "digest": "14873812ff239d7be71888fd772893f9646f42a7c826bc0d967cfc36334a5061",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.2.1"
+    },
+    "typeduck-codex-app-server-protocol": {
+      "digest": "65451e3dc6afdf842488b6347e62c5a668b9b2769d271434254fe06272962e27",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-cdx-dep-1624b46487e59efe",
+      "source": "workspace",
+      "version": "0.2.0"
+    },
+    "typeduck-codex-app-server-transport": {
+      "digest": "9628a7058e090d62a7306b8a485a70049cc14d08af535b7c22fa6f298be8bb57",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.3.1"
+    },
+    "typeduck-codex-apply-patch": {
+      "digest": "a8d25cc30bfb3309a79140a4ac81a955d5eb80718ea13deb1b51a8c41376feea",
+      "previouslyPublished": true,
+      "publishedChecksum": "69a1fea231eee29b4e2bb6632c5a188590cc3031822c5066a1454fbf3cbe905f",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-arg0": {
+      "digest": "f288315a6fe422b257073949761bf08313485cc74361422a5d42d620a6153438",
+      "previouslyPublished": true,
+      "publishedChecksum": "c8d36347530dfcbc9c0569e8b3cf0b3afbbbcd027c7bdb2094dd10f656b98c09",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-async-utils": {
+      "digest": "84a1e6034d93a58507acadc72a3f51ff8ac5e5dd9d3e9e1faa6919d653b5f0de",
+      "previouslyPublished": true,
+      "publishedChecksum": "bedbfe28d6b1f5090a15aacd99c47d1656760c6a14db0ec43f5f078d7b4bf8da",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.1.0"
+    },
+    "typeduck-codex-aws-auth": {
+      "digest": "94bb9523fb1b0aa1bad0e5efdc55774695a5be2ef9862a10464c098b85a0670a",
+      "previouslyPublished": true,
+      "publishedChecksum": "c3b9477f44ad6edd0f01bbc09d982ee8813415b0e886eeff80039ec2e324268b",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-backend-client": {
+      "digest": "4f3f645e4678b222787e6141a22b8eef7630d58e167ac98f6f001e004cadeb1c",
+      "previouslyPublished": true,
+      "publishedChecksum": "3e27cabce4d0889125be1ee24803dfc0e1d0f48fdf78dfc9d3c18a21d722049d",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.3.0"
+    },
+    "typeduck-codex-backend-openapi-models": {
+      "digest": "74df5827c396b43fd330661318624ec260746a7614e40d143fac81577183989d",
+      "previouslyPublished": true,
+      "publishedChecksum": "e8339b6c4a346a447fb25f5c835e047c4f5d5b54d1ed30fe30ba941abb61702d",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-chatgpt": {
+      "digest": "5004b17fead18e99c4818caac3759d39240683dbb0301c5dda3d7448beee6b9e",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.4.1"
+    },
+    "typeduck-codex-client": {
+      "digest": "22e7a772909ef1b60c58e4dbb8f2fe8a7c41e59a0210d50800047c12ec35e41a",
+      "previouslyPublished": true,
+      "publishedChecksum": "5c0b35477bb417b8e1206fb838be236eb078dcb0c4394317feaed5a3a3b8d92f",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-cloud-config": {
+      "digest": "86a684745c1ad4c0125d339fe173f1bf67914efef47b716d615b96baadb9098a",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.4.1"
+    },
+    "typeduck-codex-code-mode": {
+      "digest": "a419a68ec4e8a24b61ef3a16c0f93d12af956efaef5137f9da1639c19100d9fa",
+      "previouslyPublished": true,
+      "publishedChecksum": "8dde691a1d06e7c89640dacb7e44d2a20757a44fe2672bae022c94cc0adf98c7",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.4.0"
+    },
+    "typeduck-codex-code-mode-protocol": {
+      "digest": "1e5d4ddc29b37d989c6a5622ae111c718d7a5682e761032b268618eef587256c",
+      "previouslyPublished": true,
+      "publishedChecksum": "204796b248ffd1e0d66e2d0024d297fdb6ab4517efe1633444bfc7966ecf8458",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-collaboration-mode-templates": {
+      "digest": "81312cfa35232b1b5377e7a2f9f5ddcdc834939bb225c6efeade674db2d5a845",
+      "previouslyPublished": true,
+      "publishedChecksum": "5eb137609687814deba3e1fa0c049811a39d66e1bdc2c648c4f2cac2414b12f0",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-config": {
+      "digest": "456bcaf2b4c94f1db6f585f2d7b63dc896d80e8527d5608e81b6ea4ebfac95a6",
+      "previouslyPublished": true,
+      "publishedChecksum": "14fc9f5afcecf4f6c30b73599325d50c6c0677b1f0b4d9d87d5a30e1053a896a",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-connectors": {
+      "digest": "485b47e060472a0e4c23c355b64769575b2fe93f7a148d4a437d8b56672e5445",
+      "previouslyPublished": true,
+      "publishedChecksum": "91824301585518821ef681955fe9d81535e5bf8f5fe2852ef15152956673a600",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.5.0"
+    },
+    "typeduck-codex-connectors-extension": {
+      "digest": "f8447029a96d01512582d76f9e98843717167c118e5ea84f3773021b637f2e6a",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.5.1"
+    },
+    "typeduck-codex-context-fragments": {
+      "digest": "57ea5d3174e573ded4d223839a5aeabd9e23a1f7c844a011754be3762ced087c",
+      "previouslyPublished": true,
+      "publishedChecksum": "f1e3709bda9fcc38c4c346dffba99a579ba98ea09478048eb1492f10f0871b4b",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-core": {
+      "digest": "d64a65fcee58d0438ea52cc444e96188125f407217f1d92085b039c2875b9eb5",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.6.1"
+    },
+    "typeduck-codex-core-plugins": {
+      "digest": "d2fdac139c137cd55f89e098c034fdcf7aa2681dc309d4eec3ed156fa0e88302",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.6.1"
+    },
+    "typeduck-codex-core-skills": {
+      "digest": "c54080b96ab21ba21781f417cb0994238734e4811d7819dfeb03727f2330b5ae",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.6.1"
+    },
+    "typeduck-codex-exec-server": {
+      "digest": "95f7e59472e95f1cf0823b401977c85e22d46aa8b7f957780c0cb501a93a875d",
+      "previouslyPublished": true,
+      "publishedChecksum": "b5b07fe2206fe43c97aaf3e8c4042ac69666d12b3dc73d08a9bd8c01acbb5158",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-exec-server-protocol": {
+      "digest": "bc6ba4e58a36dec733dd72b3d6e39e2049c5305efd9ae28b6674a8e1face5a83",
+      "previouslyPublished": true,
+      "publishedChecksum": "1b24a233b3d9a2a668c23d739591a73928aa7e3af46bab1a17aa904ef368f71c",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-execpolicy": {
+      "digest": "4c377bfb1e5a5c43eb742ae1c0f292e20c56555ef871c6daf73d8de89c66fefc",
+      "previouslyPublished": true,
+      "publishedChecksum": "d3caa18287436fa48cfc4490223cc026f94f2a2a65da9d5aeb04c5c00eacf0e6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.30.0"
+    },
+    "typeduck-codex-experimental-api-macros": {
+      "digest": "a9d4c50e6226385b3bd860cc04e1250c4ba366f8656a9be81a54339667da654b",
+      "previouslyPublished": true,
+      "publishedChecksum": "c40d520c79b27cc13797d80bc9911ffd67be25b5eb3509ec8b374198132b01a6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.31.0"
+    },
+    "typeduck-codex-extension-api": {
+      "digest": "70f3aa27f216d2288f3a0a50eec2cc28922a769e8f25a2992e057182dca57ab5",
+      "previouslyPublished": true,
+      "publishedChecksum": "99925a0951c44b6b76126d25c765fc2dfea417bed03d56b0f13d0082f8f68efd",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-extension-items": {
+      "digest": "12c1369bd824d64e8de50d67dc03ca79df5336498e4651227b6a2b818c5f94db",
+      "previouslyPublished": true,
+      "publishedChecksum": "9764acc64d1ebb25e51d55955b64d5c92db67bd23113c14fb660f47da25ddba4",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.33.0"
+    },
+    "typeduck-codex-external-agent-migration": {
+      "digest": "2ba3f17a943367f07d6ba42fbd975af15af7fcf6eb04e010dd06f691307cd4fd",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.7.1"
+    },
+    "typeduck-codex-features": {
+      "digest": "a47e1df2d946acb023fbc0417fc23b5fdc49c66451e5505c185662bbe6d93a3b",
+      "previouslyPublished": true,
+      "publishedChecksum": "28688ac385e6255538b68768ca47c027d3e8c69f43550143fbae3d5138f1df45",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-feedback": {
+      "digest": "2c6323289f2c0d67a1761339b466e6d643a63cfe98fadd8c43ea9736be699527",
+      "previouslyPublished": true,
+      "publishedChecksum": "e3d6a86093669a4902855b5c8615fef384715110046bdcf5bd7f58fff71142e6",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.7.0"
+    },
+    "typeduck-codex-file-search": {
+      "digest": "6924ed064c05746da25d8d65172884df1ea50541d8a6666149fad8c0a1c743ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "670258c33c86a950e3ce2bf0fbbba90da679bb056a6c487b13a9193d1cd08ac6",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-file-system": {
+      "digest": "2ae71012fabd8b68be3eab77e166d4e8f8c79cf9b468cfae9ecd97899e9f4d82",
+      "previouslyPublished": true,
+      "publishedChecksum": "e485e35fef621ad744089d054e46c72938bbbe402ccc0822a95ff5e288e46a2a",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.38.0"
+    },
+    "typeduck-codex-file-watcher": {
+      "digest": "0ec7ce3c8bb91823140bbc43589def495ec8700395ddeb0bc70f5e5ba263ce53",
+      "previouslyPublished": true,
+      "publishedChecksum": "311f1890962e691ddc8abd3cb0964a5c9b1f4597408d903015f327ba49a06bdd",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-git-utils": {
+      "digest": "be010e775c16c8267e7f80134d9f6589404fb1c450c5feb5e6c081d460e96d13",
+      "previouslyPublished": true,
+      "publishedChecksum": "228dd6e2f8820d576451e1b2c9f1099338baaa0d5aba8234fd2589a5cc82894c",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.40.0"
+    },
+    "typeduck-codex-goal-extension": {
+      "digest": "df4716d1ed81172777f43d01baf30217f32aa94ae1a441ab9fc5bb263fb8ba83",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.8.1"
+    },
+    "typeduck-codex-guardian": {
+      "digest": "613cf52092b887b21559b85f605da061e7f4f1e87d8e79b636d9b4155aeb582b",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.8.1"
+    },
+    "typeduck-codex-home": {
+      "digest": "162af0da6607e5f4ec86ccf9f5f43421fc23361c4441dc7dea177da01fdfc1d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "daa0ab063f79a417a85b061c740d78721279caf61f5894dda74b727ffdfe0952",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.8.0"
+    },
+    "typeduck-codex-hooks": {
+      "digest": "63d764a0ebc3b4e409c23ba3733ca16d3407c6b7ed1e6e151723dcf5c6aa9945",
+      "previouslyPublished": true,
+      "publishedChecksum": "7e3b452ad02d050cae60d49cbfcb86bf2c5c4fc6b64f686ee9a6e2f6bfe7a07a",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-http-client": {
+      "digest": "d806fe2ad9f4b8e93a33792041710722649431931564604aca063cc8edd4ae64",
+      "previouslyPublished": true,
+      "publishedChecksum": "42fc1e53acf870038e5854ce5b549dc32d3d8cda9abb26bf2c276ea3c6fbe338",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.45.0"
+    },
+    "typeduck-codex-image-generation-extension": {
+      "digest": "d36da2e3154af7c1663abbf5db0e81ea007300f6e2b3b5207e3d79ddc83d4cba",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.9.1"
+    },
+    "typeduck-codex-install-context": {
+      "digest": "04c1f5a4bb9be9278c7e49087c0e90361998fd6665f57d941cc1ae49370c1fef",
+      "previouslyPublished": true,
+      "publishedChecksum": "88d0c44a261a63512f6e7030837aa2f394ed2c291467f43e6fea09f543f953e7",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-keyring-store": {
+      "digest": "b7e1ed79727bd354f3ccece75fedcfbe5f13b51afa864511bba724585ba475ee",
+      "previouslyPublished": true,
+      "publishedChecksum": "dd2fc38c2a931dd5d85d249a9228c53f3837f48ff7f9634fb19d302073f960e8",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-linux-sandbox": {
+      "digest": "97d702a7ce5426858312b2dea4a45886ac725546b5b9848e7d1ad8babbd342d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "b0db9fe675cc2d0d1e029966046ff19f176342a370ad23b73686ca8e2a9213ad",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.9.0"
+    },
+    "typeduck-codex-login": {
+      "digest": "c4174ef9bc17b5bb7761169b593107651ef5f02d31bf7c692a345d9b7ee8a7f1",
+      "previouslyPublished": true,
+      "publishedChecksum": "1f76585e899f2c948867a6d8dbc355979789303152edf81e79a8d98afe90fcee",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-mcp": {
+      "digest": "ece26ea02f4d471288cc2d0518bb8ee915bba6eca24f95f95e0db72438cf9715",
+      "previouslyPublished": true,
+      "publishedChecksum": "7134e8bfa852561924ca798212bf94319f04a1ae7eaf8190163221a2658e68e2",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-mcp-extension": {
+      "digest": "e52e7949de8eafa4b2f73f3cee235cb8446cba43ae844b7276dfd5841d728045",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.10.1"
+    },
+    "typeduck-codex-memories-extension": {
+      "digest": "32c5e679401b0e8d6fc32ea5a17149ae425826a9ee2df91fe4f728a3122e1c40",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.10.1"
+    },
+    "typeduck-codex-memories-read": {
+      "digest": "c2f381494d0f4198874acb5e6c62b2b48e2d408f3c897db65e9fb6990b8eb52a",
+      "previouslyPublished": true,
+      "publishedChecksum": "b8373676f6fec304a0cf73c87f02098ad020f6d93229f924f017df8435e8bf2b",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.10.0"
+    },
+    "typeduck-codex-memories-write": {
+      "digest": "042e782838614ea8f217a2a73ce3c832f905cd04254c0ab9ded9772b0c5f4dce",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.11.1"
+    },
+    "typeduck-codex-model-provider": {
+      "digest": "7e00e5773f1bfc267747f5a45afd863752c4047f2cbab2b20b9832b109abe1e0",
+      "previouslyPublished": true,
+      "publishedChecksum": "bb4b214374868cf4e029001b970ff88bfed35896f4232e65c73cbe296c62afb4",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-model-provider-info": {
+      "digest": "a94293363a044d36ee76c041a5f43b902702ce0e8d2bfee36f89903d96ee04ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "da1f0047ca4f49dbd0bd24573b240ca87bce96828351502ef467a7ce33eadda4",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-models-manager": {
+      "digest": "67e6c96ba354ab3e9981a3a8698fb70fa8c3b16a78cb57614c527b4eb6c93d96",
+      "previouslyPublished": true,
+      "publishedChecksum": "38985e9314cfb552daa304e8f07bd7c203e766a3a363452fd5e9d706755fb772",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-network-proxy": {
+      "digest": "1b65e4e742b3cc3e89686e3b9756e37fc63c6b5ca41d9d9b7579535b3a1a81ca",
+      "previouslyPublished": true,
+      "publishedChecksum": "2f7eccbacf59dc2d29e50b8ad93ccde086edbb4fe82b73462e933f34fbfcdde8",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.59.0"
+    },
+    "typeduck-codex-otel": {
+      "digest": "d7bbe16a0f8ac10410f73fd17e79a3827274f6a2d2ee2e0ec85d97278e8f56bc",
+      "previouslyPublished": true,
+      "publishedChecksum": "ff2784946cc183e825b2cbc836f2c0096ab1290a3323624d4a57b073ffdf2eb1",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.11.0"
+    },
+    "typeduck-codex-plugin": {
+      "digest": "b17f73df7726d855c031ff6c753cd3d97bd0f15dc38c0808c1231badf46c2a30",
+      "previouslyPublished": true,
+      "publishedChecksum": "56eff9945882d9ecf18b277c3747f801047b335e348e600f947dd75ff718b23f",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-process-hardening": {
+      "digest": "ada17cad84c2f100fbc0e485401a10bae2b95b7d79ff1b5da1f757a27d4a206c",
+      "previouslyPublished": true,
+      "publishedChecksum": "4866456ee9939a11ef3494c9288fc08c1b45f4dc50f3702b4108c1be29245b1e",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-prompts": {
+      "digest": "ea4e350d32798382008b1788da165ea7b529174a53a1e21783a78c866456d708",
+      "previouslyPublished": true,
+      "publishedChecksum": "b82748b05f6093de9ffc64659248a58e27a4ff709ca38cdcd0c1d127ebc37d94",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-protocol": {
+      "digest": "9bc80155c8213b9c9d73a8b4cc55504da39ffa3fc799a9175224425f6e2873b3",
+      "previouslyPublished": true,
+      "publishedChecksum": "e8ac78b455b9c1361864c94abc328ca4ee171ab494151d95a3f6936c589dc755",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.64.0"
+    },
+    "typeduck-codex-response-debug-context": {
+      "digest": "c71bb062715b7dd7750b2d4decce1a2787caed47dbb8c710c2e35228e1bcd201",
+      "previouslyPublished": true,
+      "publishedChecksum": "a84d5d95863523c6069523cb670c452620d3de6da7c07cd00272481f41523d51",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-rmcp-client": {
+      "digest": "6cc312859b5641e0d39fad3d30fdfd96f12c55990015a0e27702b66e9140343d",
+      "previouslyPublished": true,
+      "publishedChecksum": "37618c04a4bd01a80ccd73e7363dc0bc93f86bf4e1a88091b573e215416ed614",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.12.0"
+    },
+    "typeduck-codex-rollout": {
+      "digest": "a5356d7be6d074587c34f62e8d3e773597b46dceb99f5e73de91d323d5defa05",
+      "previouslyPublished": true,
+      "publishedChecksum": "b5355e0b13ab1f35bfe49af4ac79e0f1e7e183d092642161fbd79111a73652cc",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-rollout-trace": {
+      "digest": "ac53081a52d19f3c591caf5ee51f12a014fedff0755af0306331494b3d83b4a4",
+      "previouslyPublished": true,
+      "publishedChecksum": "2fb9e30e91a6af535639cf9bf3c9f605a1f98e73b2241cc5d08f8fb4c05a7b86",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-sandboxing": {
+      "digest": "72d700d5b922077c007d2fce45ca3aca82a2d46edaa5dde2edb612421b999e4a",
+      "previouslyPublished": true,
+      "publishedChecksum": "d068ca1e9ff8bc74e0d8209b4c9d739cf76149a257ffc3ce2329ea25401b184c",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-secrets": {
+      "digest": "07d0b4934aafdc438b987f886d775d54ca084538a8d018f3d577d9782e28f02c",
+      "previouslyPublished": true,
+      "publishedChecksum": "15775eb8d75b56556215d8d48f2b0b741d47ce89bfbb133e6d6c6a009b1cd367",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-shell-command": {
+      "digest": "89bd955ddf4507c9693e9a5e111141203f7d7d9202470b9616a1036a98951712",
+      "previouslyPublished": true,
+      "publishedChecksum": "18ad2d8adef81b7605ad32d8c56ba64e97cc60fd68cef0437ecf2149f4bec172",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.71.0"
+    },
+    "typeduck-codex-shell-escalation": {
+      "digest": "5eb8786eb1586e702362a92325dc4649705de31a09a63b20c4fd51941d3d160a",
+      "previouslyPublished": true,
+      "publishedChecksum": "7c0bb9bb24fb4774c792ede0fdf2a7828ca207b9d1bc9627fb3ce9387eee403a",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.13.0"
+    },
+    "typeduck-codex-skills": {
+      "digest": "041ad96dba952672d1df5f3817a7dc78b10dfbcf2332fb9eea03a323f8b10690",
+      "previouslyPublished": true,
+      "publishedChecksum": "32bfc73467d882f9b733a032b25a03ea568b80b9ce236cf3e067bc447744db8d",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-skills-extension": {
+      "digest": "f475f47fc4a2a4baf7f0a17051f50639f45779d3601b13373503bd26dfa82771",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.14.1"
+    },
+    "typeduck-codex-state": {
+      "digest": "4c6864a664dfc26ac61902191fda138c070e4c0a0a4897b54d579c988bbefc25",
+      "previouslyPublished": true,
+      "publishedChecksum": "bfcd279aa4274819785cc315e150e52947bb5bb2508ebbd898e26654fd41f02c",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.75.0"
+    },
+    "typeduck-codex-terminal-detection": {
+      "digest": "13f1183f093e5c148c0998bcb4d11f3f7f2b415efb63e128b7434ff0057de793",
+      "previouslyPublished": true,
+      "publishedChecksum": "c8942ad1c5b1c1cdbbaa568f441362d3ce2f0d9acbf82ec030cad637fc32fe60",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-thread-store": {
+      "digest": "a97e1b933b2bcfc496fe864e9e84d40141b594dc93edf8c30d7a4557dea64335",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.14.1"
+    },
+    "typeduck-codex-tools": {
+      "digest": "e22d9d057a2a9b96c9eef9378ff75d1938d911a92ca6027a6bffb70e5b9e889f",
+      "previouslyPublished": true,
+      "publishedChecksum": "762a5eccdcea32455e76045153c09e3b4b80a008647b7e7dbeecdfdcf5e74feb",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.14.0"
+    },
+    "typeduck-codex-uds": {
+      "digest": "aa44e499f4a5baa072bf94055672bd529bba249f79287cd0732b2b0c86d80d63",
+      "previouslyPublished": true,
+      "publishedChecksum": "0cdb5801a4f7e0a3b2b18ac58152d6da4ad1d2d51d13d859aef2b0076e15c30a",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-absolute-path": {
+      "digest": "27348b75014b26234e83bf704ce2cd0a26ba40cf641a1ac82d055b38795eef50",
+      "previouslyPublished": true,
+      "publishedChecksum": "9ffe6f81f65eb834e23336a9f0ce02c085ca46b9750d93f6bebc75090c4d5b14",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.80.0"
+    },
+    "typeduck-codex-utils-cache": {
+      "digest": "874359a4890790919cd27a3491b8e381dea600be7507c8c38facdb9323cc26d8",
+      "previouslyPublished": true,
+      "publishedChecksum": "4f170459cff3387e0d3ea66235be95885ccc675daf49fca9c119c4c503ba647a",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.81.0"
+    },
+    "typeduck-codex-utils-cli": {
+      "digest": "e123a6ba8bdb1dbd8bc2fac9b79c406302ac18b0bb02d4651422b63d2135cd74",
+      "previouslyPublished": true,
+      "publishedChecksum": "f9b1d6ef0e69bc14d70cf28cae38951ac877c95d2b7c28814ac694a19bf96fcc",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-home-dir": {
+      "digest": "6920fb9c314109dfed0be10622be25c74205c058a953f61405086d619c425865",
+      "previouslyPublished": true,
+      "publishedChecksum": "3640ed0874f3bcfc014712bf8ba0edddc0043f2283edd2270a6d9bd39097219d",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.83.0"
+    },
+    "typeduck-codex-utils-image": {
+      "digest": "87665c3bcf7eddf54d02a68265a27a78205fa0bea835c5482998834db833acd6",
+      "previouslyPublished": true,
+      "publishedChecksum": "ff94ef89d7b5678819e1e808b5ec80f4b21a631c60de6fae2621d0c7b9926312",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.84.0"
+    },
+    "typeduck-codex-utils-json-to-toml": {
+      "digest": "2b14cd96631cf7f4c8fbd7f0dacac2fd837f012d85bb3da8a59a39874a587c19",
+      "previouslyPublished": true,
+      "publishedChecksum": "08fb6a422e4da76f2eb933ab4a0a9ed21488932025d8fe539ce269524a479133",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-output-truncation": {
+      "digest": "d3bf59fcb1be85e6bd804c9d6fde8c433bebcb406293a5aea7362fc78e923488",
+      "previouslyPublished": true,
+      "publishedChecksum": "6b9421fd451793c8be5238a3bc38b7bd64eb303155515801e775bd217b9d27b8",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-path": {
+      "digest": "581298c01579db8f083a4a73e99c76e0c0696dc9cd52091df14d8f43d62edc6a",
+      "previouslyPublished": true,
+      "publishedChecksum": "606b84de44c2218d95158184a4cccce4a06ffb67c64fedc7f27e922db20d0c96",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.15.0"
+    },
+    "typeduck-codex-utils-path-uri": {
+      "digest": "8e8ca8aa8888949e68232df224b1a45996ec031072ba2ea143f1cbc6b287a67b",
+      "previouslyPublished": true,
+      "publishedChecksum": "edbd1a1c22497e0e98bb43167752108e7a5f5909cbb8dd65b912d29e069165f6",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.88.0"
+    },
+    "typeduck-codex-utils-plugins": {
+      "digest": "643acb80d07c6c0b36b783496fa89f60455135ebd1fb06e4c8ecf9a4f8e2b12a",
+      "previouslyPublished": true,
+      "publishedChecksum": "50d43fe945aac26f50509dfea217789d2062a4111d5686d032df64b49319edb9",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-pty": {
+      "digest": "6d13554ecc136f95210ba1ade4901ee0aaf3d05c0e20834ecaa840f7f3d1b7e6",
+      "previouslyPublished": true,
+      "publishedChecksum": "5c7595a84caed95f01f23cda14d7d1bc92d075405fb866ff9257085e96b0339d",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-rustls-provider": {
+      "digest": "3482193a548feb084f2a2aeb3531c80515aa03791307c0e4462bf43a1b3f68ba",
+      "previouslyPublished": true,
+      "publishedChecksum": "49adb18faaf4533099d9bd1a6610a5afc4f7835a10065f1a0bb8e0caade72546",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.91.0"
+    },
+    "typeduck-codex-utils-stream-parser": {
+      "digest": "446413d059e9bd9c2c2756ee9e9ad725dc1815b4fabeb260befe018ff5a15019",
+      "previouslyPublished": true,
+      "publishedChecksum": "8d0771a96021b02b2857c90b4d045edb8d4afd97543930dccef1310ee70a3940",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-utils-string": {
+      "digest": "adde70d22ce077b2ebe645298616c524cb95d3baa1894c74649f33b10faccbae",
+      "previouslyPublished": true,
+      "publishedChecksum": "d6d858b64f17e0a8717489789e3054e8f5e48acdf29a43e9ee4a7f8e3bcb1474",
+      "registryName": "typeduck-codex-async-utils",
+      "source": "workspace",
+      "version": "0.93.0"
+    },
+    "typeduck-codex-utils-template": {
+      "digest": "3c659b0c4bd7e021a246adcdcfdb692b56266d56c112af9fbaf9283b0b3b55f8",
+      "previouslyPublished": true,
+      "publishedChecksum": "1c1852f3759c4530dd487d9a6d42768002cc5d449cef289d33c5c45098d348c6",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "workspace",
+      "version": "0.16.0"
+    },
+    "typeduck-codex-web": {
+      "digest": "989ed943f47dd4ab1c45d10fdfa1265a119327da74f7e79a3d91cb1e96868b95",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-web",
+      "source": "workspace",
+      "version": "0.6.0"
+    },
+    "typeduck-codex-web-search-extension": {
+      "digest": "0f7cd575ac7c9e5735a0ca1c8f1efe7852afb685e936910e25847d784cbaba69",
+      "previouslyPublished": false,
+      "publishedChecksum": null,
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "workspace",
+      "version": "0.16.1"
+    },
+    "typeduck-codex-websocket-client": {
+      "digest": "e62ee0408fec7a1f0dab576d907bd83aaf0125de727cb5dbccbf93e5c025be92",
+      "previouslyPublished": true,
+      "publishedChecksum": "9ef747662d9743b4b765107dbc9ad6fce9dc598865c2f163d548b764beb6ad3f",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "workspace",
+      "version": "0.17.0"
+    },
+    "typeduck-codex-windows-sandbox": {
+      "digest": "f0082fbea174d61f7480f58aea2df0196e20b472e13aa22be2fa99ed88156ce3",
+      "previouslyPublished": true,
+      "publishedChecksum": "328983989c47760e27fac7ce9ab44009d5e14df07d37f2e17db45d3915bd2e06",
+      "registryName": "typeduck-codex-execpolicy",
+      "source": "workspace",
+      "version": "0.17.0"
+    },
+    "typeduck-nucleo": {
+      "digest": "4d5adf5fd5329ec6fb86a04e96e0b40ad41578ab3195c76855d0ccbfa020c1c2",
+      "previouslyPublished": true,
+      "publishedChecksum": "06f7063f0804c58b3ac7a254fc2b73de7d8e74fbc222e916ed25467177a2c58f",
+      "registryName": "typeduck-codex-extension-items",
+      "source": "git+https://github.com/helix-editor/nucleo.git?rev=4253de9faabb4e5c6d81d946a5e35a90f87347ee#4253de9faabb4e5c6d81d946a5e35a90f87347ee",
+      "version": "0.17.0"
+    },
+    "typeduck-nucleo-matcher": {
+      "digest": "be9bb35077f65eea20c5faef24d462de1584d8e6da640dc28293db2e4dab37dd",
+      "previouslyPublished": true,
+      "publishedChecksum": "e3fd4fd90a52db61679b81d5b2608267881ca3768300fdb6d7d9783a1a3c11a7",
+      "registryName": "typeduck-codex-utils-home-dir",
+      "source": "git+https://github.com/helix-editor/nucleo.git?rev=4253de9faabb4e5c6d81d946a5e35a90f87347ee#4253de9faabb4e5c6d81d946a5e35a90f87347ee",
+      "version": "0.17.0"
+    },
+    "typeduck-tokio-tungstenite": {
+      "digest": "0affdd07e58f2891d2c0ab6600df782dc83e01929f4613dee8b4cc584842619d",
+      "previouslyPublished": true,
+      "publishedChecksum": "5dc231ab79aed703fbc16b84dda59d38508a91506d66c248021db157991e6b7c",
+      "registryName": "typeduck-codex-utils-rustls-provider",
+      "source": "git+https://github.com/openai-oss-forks/tokio-tungstenite?rev=0e5b2d73aa18dd9f0a50ee9ff199d5aef7594186#0e5b2d73aa18dd9f0a50ee9ff199d5aef7594186",
+      "version": "0.17.0"
+    },
+    "typeduck-tungstenite": {
+      "digest": "a2326cd6b3ab02446ec9badce549004bf52c6228c782c955e5668b5070492d91",
+      "previouslyPublished": true,
+      "publishedChecksum": "898f6e56b4946b13623789b312e6901b4066060170e5c7bf4c2ec371b7efa110",
+      "registryName": "typeduck-codex-utils-absolute-path",
+      "source": "git+https://github.com/openai-oss-forks/tungstenite-rs?rev=4fffad30fe373adbdcffab9545e9e9bf4f2fc19f#4fffad30fe373adbdcffab9545e9e9bf4f2fc19f",
+      "version": "0.18.0"
+    }
+  },
+  "publishOrder": [
+    "typeduck-codex-async-utils",
+    "typeduck-codex-utils-absolute-path",
+    "typeduck-codex-execpolicy",
+    "typeduck-codex-extension-items",
+    "typeduck-codex-utils-home-dir",
+    "typeduck-codex-utils-rustls-provider",
+    "typeduck-codex-network-proxy",
+    "typeduck-codex-utils-cache",
+    "typeduck-codex-utils-image",
+    "typeduck-codex-utils-path-uri",
+    "typeduck-codex-utils-string",
+    "typeduck-codex-protocol",
+    "typeduck-codex-state",
+    "typeduck-codex-agent-graph-store",
+    "typeduck-codex-experimental-api-macros",
+    "typeduck-codex-shell-command",
+    "typeduck-codex-app-server-protocol",
+    "typeduck-codex-file-system",
+    "typeduck-codex-git-utils",
+    "typeduck-codex-http-client",
+    "typeduck-codex-agent-identity",
+    "typeduck-codex-client",
+    "typeduck-tungstenite",
+    "typeduck-tokio-tungstenite",
+    "typeduck-codex-websocket-client",
+    "typeduck-codex-api",
+    "typeduck-codex-otel",
+    "typeduck-codex-features",
+    "typeduck-codex-model-provider-info",
+    "typeduck-codex-utils-path",
+    "typeduck-codex-config",
+    "typeduck-codex-keyring-store",
+    "typeduck-codex-secrets",
+    "typeduck-codex-terminal-detection",
+    "typeduck-codex-utils-template",
+    "typeduck-codex-login",
+    "typeduck-codex-aws-auth",
+    "typeduck-codex-feedback",
+    "typeduck-codex-collaboration-mode-templates",
+    "typeduck-codex-utils-output-truncation",
+    "typeduck-codex-models-manager",
+    "typeduck-codex-response-debug-context",
+    "typeduck-codex-model-provider",
+    "typeduck-codex-exec-server-protocol",
+    "typeduck-codex-utils-pty",
+    "typeduck-codex-windows-sandbox",
+    "typeduck-codex-sandboxing",
+    "typeduck-codex-exec-server",
+    "typeduck-codex-utils-plugins",
+    "typeduck-codex-plugin",
+    "typeduck-codex-analytics",
+    "typeduck-codex-apply-patch",
+    "typeduck-codex-code-mode-protocol",
+    "typeduck-codex-code-mode",
+    "typeduck-codex-connectors",
+    "typeduck-codex-context-fragments",
+    "typeduck-codex-skills",
+    "typeduck-codex-core-skills",
+    "typeduck-codex-hooks",
+    "typeduck-codex-rmcp-client",
+    "typeduck-codex-mcp",
+    "typeduck-codex-tools",
+    "typeduck-codex-core-plugins",
+    "typeduck-codex-extension-api",
+    "typeduck-codex-install-context",
+    "typeduck-codex-memories-read",
+    "typeduck-codex-prompts",
+    "typeduck-nucleo-matcher",
+    "typeduck-nucleo",
+    "typeduck-codex-file-search",
+    "typeduck-codex-rollout",
+    "typeduck-codex-rollout-trace",
+    "typeduck-codex-thread-store",
+    "typeduck-codex-utils-stream-parser",
+    "typeduck-codex-shell-escalation",
+    "typeduck-codex-core",
+    "typeduck-codex-agent-extension",
+    "typeduck-codex-uds",
+    "typeduck-codex-app-server-transport",
+    "typeduck-codex-process-hardening",
+    "typeduck-codex-linux-sandbox",
+    "typeduck-codex-arg0",
+    "typeduck-codex-backend-openapi-models",
+    "typeduck-codex-backend-client",
+    "typeduck-codex-utils-cli",
+    "typeduck-codex-chatgpt",
+    "typeduck-codex-cloud-config",
+    "typeduck-codex-memories-write",
+    "typeduck-codex-external-agent-migration",
+    "typeduck-codex-file-watcher",
+    "typeduck-codex-goal-extension",
+    "typeduck-codex-guardian",
+    "typeduck-codex-home",
+    "typeduck-codex-image-generation-extension",
+    "typeduck-codex-connectors-extension",
+    "typeduck-codex-mcp-extension",
+    "typeduck-codex-memories-extension",
+    "typeduck-codex-skills-extension",
+    "typeduck-codex-utils-json-to-toml",
+    "typeduck-codex-web-search-extension",
+    "typeduck-codex-app-server",
+    "typeduck-codex-web"
+  ],
+  "published": false,
+  "rootVersion": "0.6.0",
+  "schemaVersion": 2
+}

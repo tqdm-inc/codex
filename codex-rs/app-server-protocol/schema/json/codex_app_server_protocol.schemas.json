@@ -1676,6 +1676,30 @@
             },
             "method": {
               "enum": [
+                "mcpServer/oauth/logout"
+              ],
+              "title": "McpServer/oauth/logoutRequestMethod",
+              "type": "string"
+            },
+            "params": {
+              "$ref": "#/definitions/v2/McpServerOauthLogoutParams"
+            }
+          },
+          "required": [
+            "id",
+            "method",
+            "params"
+          ],
+          "title": "McpServer/oauth/logoutRequest",
+          "type": "object"
+        },
+        {
+          "properties": {
+            "id": {
+              "$ref": "#/definitions/v2/RequestId"
+            },
+            "method": {
+              "enum": [
                 "config/mcpServer/reload"
               ],
               "title": "Config/mcpServer/reloadRequestMethod",
@@ -12832,6 +12856,38 @@
           "authorizationUrl"
         ],
         "title": "McpServerOauthLoginResponse",
+        "type": "object"
+      },
+      "McpServerOauthLogoutParams": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "threadId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "McpServerOauthLogoutParams",
+        "type": "object"
+      },
+      "McpServerOauthLogoutResponse": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "properties": {
+          "removed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "removed"
+        ],
+        "title": "McpServerOauthLogoutResponse",
         "type": "object"
       },
       "McpServerRefreshResponse": {

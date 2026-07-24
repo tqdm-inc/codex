@@ -1,0 +1,5 @@
+---
+source: web/src/components/views_tests.rs
+expression: "&rendered[heading_start..heading_end]"
+---
+<div class="min-w-0 flex-1"><h1 id="thread-title" class="truncate text-sm font-semibold">A very long conversation title that must not displace the header controls</h1><p id="thread-cwd" class="truncate text-xs text-muted-foreground">/workspace/with/an/exceptionally/long/path/that/must/remain/constrained</p></div>

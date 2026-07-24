@@ -1326,6 +1326,9 @@ impl MessageProcessor {
             ClientRequest::McpServerOauthLogin { params, .. } => {
                 self.mcp_processor.mcp_server_oauth_login(params).await
             }
+            ClientRequest::McpServerOauthLogout { params, .. } => {
+                self.mcp_processor.mcp_server_oauth_logout(params).await
+            }
             ClientRequest::McpServerRefresh { params, .. } => {
                 self.mcp_processor.mcp_server_refresh(params).await
             }

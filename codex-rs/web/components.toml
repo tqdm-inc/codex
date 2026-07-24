@@ -1,0 +1,45 @@
+# Topcoat UI install state. Managed by `topcoat ui`.
+version = 1
+components_dir = "src/components/ui"
+
+[theme]
+name = "neutral"
+registry = "topcoat"
+hash = "sha256:c7bdcb5ea4ff757611ba616e92178169b262be98155c06dfa2407584d51e7459"
+file = "styles.css"
+
+[registries.topcoat.components.badge]
+hash = "sha256:59bab22ef3f2f98003d7808487b9d607d7a5fe123de770c0502a843f17ca903b"
+file = "src/components/ui/badge.rs"
+
+[registries.topcoat.components.button]
+hash = "sha256:b7885ffcd75843ea22cf4fe496f666ef414d9d1f8fd5648a6b6d6de81550810c"
+file = "src/components/ui/button.rs"
+
+[registries.topcoat.components.card]
+hash = "sha256:45cbe0f5a790e7359ff72ecda4fbf40fb6c7bc8c4928593d1352813a86543a01"
+file = "src/components/ui/card.rs"
+
+[registries.topcoat.components.dropdown_menu]
+hash = "sha256:9e2a7e6f4992b8d38de3439bda5b1d92a8bd1dc6db1e579eb90601992c315a1a"
+file = "src/components/ui/dropdown_menu.rs"
+
+[registries.topcoat.components.input]
+hash = "sha256:fbbe56c47d871e333183ee8b91a0360fe4e7b4326bf7e71defee20417c55445c"
+file = "src/components/ui/input.rs"
+
+[registries.topcoat.components.select]
+hash = "sha256:19d7779d8e7e75a2db78904232fa3db11f8e0e49cfca8a1852c4dcd686ac2d69"
+file = "src/components/ui/select.rs"
+
+[registries.topcoat.components.spinner]
+hash = "sha256:d88c5c715832ba0eca485dea1a4964ea725b98c74119461ecb5e093ba7ca3bb3"
+file = "src/components/ui/spinner.rs"
+
+[registries.topcoat.components.switch]
+hash = "sha256:6f8b32da0ae50deb48e95a997ce7dd7008a8637266d0212178d739d7ddb910c5"
+file = "src/components/ui/switch.rs"
+
+[registries.topcoat.components.textarea]
+hash = "sha256:49952715ff3cfc1b8c0372a70745c33a81521a46422695d7a62206e1a3d4b626"
+file = "src/components/ui/textarea.rs"

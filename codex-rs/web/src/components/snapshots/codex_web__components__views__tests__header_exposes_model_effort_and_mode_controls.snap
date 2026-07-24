@@ -1,0 +1,7 @@
+---
+source: web/src/components/views_tests.rs
+expression: "format!(\"{}\\n{}\\n{}\", select_summary(&rendered, \"model-select\"),\nselect_summary(&rendered, \"effort-select\"),\nselect_summary(&rendered, \"mode-select\"))"
+---
+model-select: gpt-test=GPT Test [selected]
+effort-select: low=Low, medium=Medium, high=High [selected]
+mode-select: default=Default [selected], plan=Plan
