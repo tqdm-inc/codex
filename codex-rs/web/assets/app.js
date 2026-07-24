@@ -270,6 +270,18 @@ function updateThreadBadge(event) {
     live.classList.toggle("hidden", status !== "active" && status !== "inProgress");
     live.classList.toggle("bg-amber-500", status === "waitingOnApproval" || status === "waitingOnUserInput");
   }
+  if (event.op === "threadStatus") {
+    const active = status === "active";
+    link.dataset.threadActive = String(active);
+    document.querySelector(active ? "#active-thread-list" : "#inactive-thread-list")?.append(link);
+    const activeHeading = document.querySelector("#active-thread-heading");
+    if (activeHeading) {
+      activeHeading.hidden = !document.querySelector(
+        "#active-thread-list [data-thread-active='true']",
+      );
+    }
+    filterThreads();
+  }
   if (event.threadId !== threadId && event.seq) {
     const read = Number(localStorage.getItem(`codex-web-read:${event.threadId}`) || 0);
     const count = Math.max(1, Number(unread?.textContent || 0) + (event.seq > read ? 1 : 0));
@@ -1541,6 +1553,7 @@ function filterThreads() {
   for (const link of document.querySelectorAll("[data-thread-title]")) {
     const titleMatches = link.dataset.threadTitle.includes(query);
     const cwdMatches =
+      link.dataset.threadActive === "true" ||
       !cwdOnlyToggle?.checked ||
       normalizedPath(link.dataset.threadCwd) === workspaceCwd;
     link.hidden = !titleMatches || !cwdMatches;

@@ -48,6 +48,58 @@ fn sidebar_layout_fits_viewport_and_scrolls_threads() {
 }
 
 #[tokio::test]
+async fn sidebar_pins_active_threads_before_inactive_threads() {
+    let cx = Cx::default();
+    let threads = [
+        json!({
+            "id": "inactive",
+            "name": "Inactive in this folder",
+            "cwd": "/workspace",
+            "status": {"type": "notLoaded"}
+        }),
+        json!({
+            "id": "active",
+            "name": "Active in another folder",
+            "cwd": "/other",
+            "status": {"type": "active"}
+        }),
+    ];
+    let view = document(
+        &cx,
+        DocumentData {
+            base_path: "/i/instance",
+            instance_id: "instance",
+            base_seq: 0,
+            threads: &threads,
+            active_thread: None,
+            active_model: "",
+            active_effort: "",
+            active_permission_mode: "workspace",
+            models: &[],
+            collaboration_modes: &[],
+            approvals: &[],
+            workspace_cwd: "/workspace",
+            mcp_servers: &[],
+            accounts: &[],
+            active_account: "Default",
+            initial_next_cursor: None,
+        },
+    )
+    .await
+    .expect("render document");
+    let rendered = view.render(&cx);
+    let start = rendered
+        .find("<nav id=\"thread-list\"")
+        .expect("thread list");
+    let end = rendered[start..]
+        .find("</nav>")
+        .map(|offset| start + offset + "</nav>".len())
+        .expect("thread list end");
+
+    insta::assert_snapshot!(&rendered[start..end]);
+}
+
+#[tokio::test]
 async fn chat_feed_owns_the_main_scroll_area() {
     let cx = Cx::default();
     let view = document(

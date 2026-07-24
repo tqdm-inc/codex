@@ -211,6 +211,7 @@ pub(crate) async fn document(cx: &Cx, data: DocumentData<'_>) -> Result {
 
 #[component]
 async fn sidebar(threads: &[Value], active_id: &str, base_path: &str) -> Result {
+    let has_active_threads = threads.iter().any(thread_is_active);
     view! {
         <aside
             id="sidebar"
@@ -246,9 +247,21 @@ async fn sidebar(threads: &[Value], active_id: &str, base_path: &str) -> Result 
                 <span>"This folder only"</span>
             </label>
             <nav id="thread-list" data-sidebar-expanded="" class=(THREAD_LIST_LAYOUT) aria-label="Chats">
-                for thread in threads {
-                    thread_link(thread: thread, active_id: active_id, base_path: base_path)
-                }
+                <div id="active-thread-list">
+                    <p
+                        id="active-thread-heading"
+                        class="px-3 pb-1 pt-2 text-[0.65rem] font-medium uppercase tracking-widest text-muted-foreground"
+                        hidden=(!has_active_threads)
+                    >"Active"</p>
+                    for thread in threads.iter().filter(|thread| thread_is_active(thread)) {
+                        thread_link(thread: thread, active_id: active_id, base_path: base_path)
+                    }
+                </div>
+                <div id="inactive-thread-list">
+                    for thread in threads.iter().filter(|thread| !thread_is_active(thread)) {
+                        thread_link(thread: thread, active_id: active_id, base_path: base_path)
+                    }
+                </div>
             </nav>
             <div class="mt-auto flex shrink-0 items-center gap-2 px-2 py-2 text-xs text-muted-foreground">
                 <span id="connection-dot" class="size-2 rounded-full bg-amber-500"></span>
@@ -270,6 +283,7 @@ async fn thread_link(thread: &Value, active_id: &str, base_path: &str) -> Result
             data-thread-id=(id)
             data-thread-title=(thread_title(thread).to_lowercase())
             data-thread-cwd=(string(thread, "cwd"))
+            data-thread-active=(thread_is_active(thread).to_string())
             class=(if active {
                 "group flex items-center gap-2 rounded-lg bg-foreground/[0.07] px-3 py-2 text-sm hover:bg-foreground/5"
             } else {
@@ -882,6 +896,15 @@ pub(crate) fn thread_title(thread: &Value) -> &str {
                 .filter(|value| !value.is_empty())
         })
         .unwrap_or("New task")
+}
+
+fn thread_is_active(thread: &Value) -> bool {
+    thread
+        .pointer("/thread/status/type")
+        .or_else(|| thread.pointer("/status/type"))
+        .or_else(|| thread.get("status"))
+        .and_then(Value::as_str)
+        == Some("active")
 }
 
 fn model_label(model: &Value) -> &str {
