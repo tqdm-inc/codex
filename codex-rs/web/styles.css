@@ -346,7 +346,7 @@
 #app-shell,
 #sidebar,
 #sidebar-backdrop {
-  transition: grid-template-columns 180ms ease, width 180ms ease, transform 180ms ease,
+  transition: grid-template-columns 180ms ease, width 180ms ease, translate 180ms ease,
     opacity 180ms ease;
 }
 
@@ -381,7 +381,7 @@
 
 @media (max-width: 768px) {
   #sidebar.mobile-open {
-    transform: translateX(0);
+    translate: 0 0;
   }
 
   #sidebar-backdrop.mobile-open {
